@@ -103,20 +103,25 @@ $(document).ready(function () {
 
     // password eye visibility
     var eyeIcon = document.querySelectorAll('.password__eye');
-
     eyeIcon.forEach(function(eye){
-        var parent = eye.parentElement;
-        var parntChild = parent.querySelector('.loopex__input');
+        eye.addEventListener('click', showpass);
 
-        var attr = parntChild.getAttribute('type');
+        function showpass(){
+            eye.classList.toggle('show');
 
-        if(parntChild.attr == 'password'){
-            eye.style.color = 'green';
+            if(eye.classList.contains('show') == true){
+                var input = eye.previousElementSibling;
+
+                input.type = 'text';
+            
+            } else {
+                var input = eye.previousElementSibling;
+
+                input.type = 'password';
+            }
         }
-
-        console.log(attr);
     });
 
-    // console.log(eyeIcon);
+  
 
     

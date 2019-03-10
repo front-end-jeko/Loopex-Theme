@@ -11,7 +11,7 @@
         padding: 30px 0;
 
         .footer__menu-ul {
-            margin-right: 200px;
+            width: 33.3333%;
         }
 
         .footer__menu-li {
@@ -66,7 +66,6 @@
             margin-top: 10px;
 
             .sub__group {
-                width: 285px;
                 display: flex;
                 border: 1px solid $input-border;
                 -webkit-border-radius: 3px;

@@ -6,6 +6,18 @@
       @include position($top: 9px, $right: 10px);
       color: #757575;
       cursor: pointer;
+
+      &.show {
+        color: $loopex-green;
+      }
+    }
+
+    .referalcode {
+      display: none;
+
+      &.active {
+        display: block;
+      }
     }
 
     .input__error {

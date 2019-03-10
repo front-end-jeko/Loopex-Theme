@@ -53,7 +53,7 @@
                 <ul class="header__ul flex align-items">
                     <li class="header__li"><a class="header__a open__popup" href="#" data-popup="register">Register</a></li>
                     <li class="header__li"><a class="header__a open__popup" href="#" data-popup="login">Log in</a></li>
-                    <li class="header__li lang__li loopex__popup-close" data-popup="lang"><a class="header__a open__popup" href="javascript:;" data-popup="lang">ENG</a>
+                    <li class="header__li lang__li open__popup" data-popup="lang"><a class="header__a loopex__popup-close" href="javascript:;" data-popup="lang">ENG</a>
                         <div class="lang__menu"></div>
                         <ul class="lang__content stopPropagation">
                             <li><a href="#">Русский</a></li>
@@ -72,7 +72,7 @@
     </div>
     
 
-
+    <!-- annoucements -->
     <section class="loopex__announcements">
         <div class="loopex__container">
             <div class="loopex__announcements-item">
@@ -113,7 +113,7 @@
     </section>
 
 
-
+    <!-- marketplace -->
     <section class="marketplace">
         <div class="loopex__container">
             <div class="marketplace__head">
@@ -215,6 +215,8 @@
 
 
 
+
+    <!-- contact -->
     <section class="loopex__contact">
         <div class="loopex__contact-container">
             <form action="#" class="contact">
@@ -241,7 +243,7 @@
     </section>
 
 
-
+    <!-- footer -->
     <footer class="loopex__footer">
         <div class="loopex__container">
             <div class="footer__menu">
@@ -259,7 +261,7 @@
                     <li class="footer__menu-li"><a href="#">White Paper</a></li>
                 </ul>
 
-                <div class="subscribe">
+                <div class="subscribe footer__menu-ul">
                     <div class="social__icons">
                         <ul>
                             <li><span class="icon-twitter1"></span>
@@ -326,8 +328,8 @@
 
                 <div class="loopex__form-group">
                     <input type="password" class="loopex__input" placeholder="Password">
-                    <div class="input__error">Fill out the field</div>
                     <span class="icon-eye password__eye"></span>
+                    <div class="input__error">Fill out the field</div>
                 </div>
 
                 <div class="form__btn">
@@ -348,7 +350,7 @@
 
     <!-- register -->
     <div class="loopex__popup-container loopex__popup-close register__popup" data-popup="register">
-        <div class="loopex__popup">
+        <div class="loopex__popup stopPropagation">
             <div class="popup__close">
                 <span>&times;</span>
             </div>
@@ -372,19 +374,19 @@
 
                 <div class="loopex__form-group">
                     <input type="password" class="loopex__input" placeholder="Password">
-                    <div class="input__error">Fill out the field</div>
                     <span class="icon-eye password__eye"></span>
+                    <div class="input__error">Fill out the field</div>
                 </div>
 
                 <div class="loopex__form-group">
                     <input type="password" class="loopex__input" placeholder="Repeat Password">
-                    <div class="input__error">Fill out the field</div>
                     <span class="icon-eye password__eye"></span>
+                    <div class="input__error">Fill out the field</div>                 
                 </div>
 
-                <div class="loopex__form-group">
-                    <label for="referalcode" class="referal__code-label">Enter the referral code</label>
-                    <input type="password" class="loopex__input referalcode" placeholder="Referral code">
+                <div class="loopex__form-group stopPropagation">
+                    <label for="referalcode" class="referal__code-label open__popup" data-popup="referal">Enter the referral code</label>
+                    <input type="password" id="referal" class="loopex__input loopex__popup-close referalcode stopPropagation" data-popup="referal" placeholder="Referral code">
                     <div class="input__error">Fill out the field</div>
                 </div>
 

@@ -4,18 +4,6 @@
     .marketplace__head {
         @include flex($justify: space-between, $align: center);
         position: relative;
-
-        &::after {
-            content: '';
-            position: absolute;
-            width: calc(100% - 804px);
-            height: 1px;
-            background: #324754;
-            bottom: 0px;
-            right: 2px;
-            border-radius: 48px;
-        }
-
         ul {
             display: flex;
             align-items: center;
@@ -25,7 +13,6 @@
             border-top-left-radius: 3px;
 
             .marketplace__li {
-                border-bottom: 1px solid $input-border;
                 border-right: 1px solid $input-border;
                 height: 100%;
                 color: $loopex-gray;
@@ -34,6 +21,22 @@
                 width: 200px;
                 font-size: 23px;
                 cursor: pointer;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    bottom: -3px;
+                    height: 7px;
+                    background: #122028;
+                    display: none;
+                }
+
+                &.active::after {
+                    display: block;
+                }
 
                 &.active {
                     border-bottom: 0;
@@ -81,7 +84,6 @@
         padding-top: 10px;
         padding-bottom: 5px;
         border: 1px solid $input-border;
-        border-top: 0;
         border-top-right-radius: 3px;
 
         ul {

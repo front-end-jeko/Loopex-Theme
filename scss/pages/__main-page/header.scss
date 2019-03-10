@@ -51,9 +51,12 @@
             @include flex($align: center);
             margin-right: 10px;
 
-            &.active .lang__content{
-                display: block;
+            .header__a {
+                &.active ~ .lang__content{
+                    display: block;
+                }
             }
+            
 
             .header__a {
                 color: $loopex-green;
@@ -67,6 +70,7 @@
                 border-bottom: 0;
                 border-left: 6px solid transparent;
                 color: $loopex-green;
+                cursor: pointer;
 
             }
 
