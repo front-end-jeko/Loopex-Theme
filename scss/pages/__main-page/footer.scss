@@ -1,0 +1,119 @@
+.loopex__footer {
+    background-color: #171f25;
+    padding: 20px 0;
+
+    .loopex__container {
+        padding: 0 15%;
+    }
+
+    .footer__menu {
+        display: flex;
+        padding: 30px 0;
+
+        .footer__menu-ul {
+            margin-right: 200px;
+        }
+
+        .footer__menu-li {
+            a {
+                color: $loopex-gray;
+                line-height: 1.6;
+                text-align: left;
+                display: block;
+                text-transform: capitalize;
+            }
+
+            &:hover a {
+                color: $loopex-green;
+            }
+        }
+
+        .social__icons {
+            ul {
+                display: flex;
+                justify-content: center;
+
+                li {
+                    padding: 7px;
+                    color: $loopex-gray;
+                    font-size: 18px;
+                    margin-right: 6px;
+                    position: relative;
+                    cursor: pointer;
+
+                    &:hover {
+                        span {
+                            color: $loopex-green;
+                        }
+
+                        .tooltip {
+                            @include show;
+                        }
+                    }
+
+                    .tooltip {
+                        height: 30px;
+                        left: 50%;
+                        top: -30px;
+                        transform: translateX(-50%); 
+                    }
+                }
+            }
+        }
+
+        .sub {
+            position: relative;
+            margin-top: 10px;
+
+            .sub__group {
+                width: 285px;
+                display: flex;
+                border: 1px solid $input-border;
+                -webkit-border-radius: 3px;
+                border-radius: 3px;
+                padding: 5px 5px;
+                background: transparent;
+                color: $loopex-gray;
+                font-family: "ubuntu_allfont_ru";
+
+                .sub__input {          
+                    font-size: 16px;      
+                    background: transparent;
+                    color: $loopex-gray;
+
+                    &::placeholder {
+                        color: #6a6b6b;
+                    }
+
+                    &:-ms-input-placeholder { 
+                        color: #6a6b6b;
+                    }
+                      
+                    &::-ms-input-placeholder { 
+                        color: #6a6b6b;
+                    }
+                }
+
+                span {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 10px;
+                    color: $loopex-green;
+                    padding-left: 3px;
+                    cursor: pointer;             
+                }
+            }
+        }
+    }
+
+    .copyright {
+        @include flex($justify: center, $align: center);
+        color: $loopex-gray;
+        font-size: 15px;
+
+        span {
+            margin-left: 10px;
+        }
+    }
+}

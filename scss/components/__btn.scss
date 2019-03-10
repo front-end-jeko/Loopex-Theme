@@ -1,0 +1,22 @@
+.btn {
+    width: 100%;
+    border-radius: 4px;
+    color: #fff;
+    padding: 7px;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'ubuntu_allfont_ru';
+}
+
+.btn--green {
+    background-color: $loopex-green;
+    border: 1px solid $loopex-green;
+}
+
+.btn--transparent {
+    background-color: #17262f;
+    border: 1px solid #324754;
+}

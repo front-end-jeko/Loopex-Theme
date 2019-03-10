@@ -1,0 +1,51 @@
+.loopex__popup-form {
+    margin-top: 50px;
+    padding: 0 30px;
+
+    .form__btn {
+        position: relative;
+        margin: 40px 0 20px 0;
+    }
+
+    .forget__pass {
+        width: 100%;
+        text-align: center;
+
+        a {
+            color: $loopex-green;
+            font-size: 14px;
+
+            &:hover {
+                color: $loopex-green-hover;
+            }
+        }
+
+        p {
+            color: #cacaca;
+            margin-top: 4px;
+            font-size: 14px;
+
+            a {
+                color: $loopex-green;
+                margin-left: 4px;
+
+                &:hover {
+                    color: $loopex-green-hover;
+                }
+            }
+        }
+    }
+
+    .agree__terms {
+        span {
+            color: #cacaca;
+            font-size: 13px;
+            line-height: 18px;
+
+            a {
+                margin: 0 5px;
+                color: $loopex-green;
+            }
+        }
+    }
+}

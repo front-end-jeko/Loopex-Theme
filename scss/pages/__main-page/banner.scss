@@ -1,0 +1,25 @@
+.loopex__banner {
+    background: url('../images/banner-img.png');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+
+    .banner__content {
+        padding-top: 19%;
+        padding-left: 3%;
+        h1 {
+            color: #fff;
+            font-size: 60px;
+            margin-bottom: 10px;
+
+            &:nth-child(2){
+                font-size: 40px;
+            }
+
+            span {
+                color: $loopex-green;
+            }
+        }
+    }
+}

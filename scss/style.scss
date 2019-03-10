@@ -1,0 +1,15 @@
+@import 'modules/variable.scss';
+@import 'partials/reset.scss';
+
+// modules
+@import 'modules/base.scss';
+@import 'modules/mixins.scss';
+
+
+// fonts
+@import 'partials/font.scss';
+
+// components
+@import 'components/components--import.scss';
+
+@import 'pages/__main-page/main-page-import.scss';

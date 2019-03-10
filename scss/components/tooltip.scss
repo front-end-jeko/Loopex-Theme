@@ -1,0 +1,17 @@
+.tooltip {
+    position: absolute;
+    background: #000000;
+    color: #fff;
+    border-radius: 3px;
+    padding: 0 5px;
+    @include flex($justify: center, $align: center);
+    z-index: 10;
+    @include hidden;
+    transition: all 0.3s;
+
+    h5 {
+        font-size: 15px;
+        text-align: center;
+        white-space: nowrap;
+    }
+}

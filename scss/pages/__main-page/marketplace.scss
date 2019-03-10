@@ -1,0 +1,131 @@
+.marketplace {
+    padding: 100px 0;
+
+    .marketplace__head {
+        @include flex($justify: space-between, $align: center);
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: calc(100% - 804px);
+            height: 1px;
+            background: #324754;
+            bottom: 0px;
+            right: 2px;
+            border-radius: 48px;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            border: 1px solid $input-border;
+            border-bottom: 0;
+            border-top-right-radius: 3px;
+            border-top-left-radius: 3px;
+
+            .marketplace__li {
+                border-bottom: 1px solid $input-border;
+                border-right: 1px solid $input-border;
+                height: 100%;
+                color: $loopex-gray;
+                padding: 8px 0;
+                @include flex($justify: center, $align: center);
+                width: 200px;
+                font-size: 23px;
+                cursor: pointer;
+
+                &.active {
+                    border-bottom: 0;
+                }
+
+                .icon-star {
+                    color: #fff;
+                    font-size: 15px;
+                    margin-right: 12px;
+                }
+
+                &:last-child{
+                    border-right: 0;
+                }
+            }
+        }
+
+        .loopex__form-group {
+            width: 200px;
+            margin-bottom: 0;
+
+            .loopex__input {
+                padding: 5px 12px;
+                padding-right: 32px;
+
+                &:focus {
+                    background: $input-bg;
+                }
+            }
+    
+            .icon-search {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 10px;
+                font-size: 9px;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+
+    .marketplace__sort {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        border: 1px solid $input-border;
+        border-top: 0;
+        border-top-right-radius: 3px;
+
+        ul {
+            @include flex($align: center);
+
+            li {
+                @include flex($justify: center, $align: center);
+                flex-grow: 1;
+
+                span {
+                    color: $loopex-green;
+                    cursor: pointer;                 
+                }
+
+                .sort {
+                    @include flex($direction: column);
+                    margin-left: 5px;
+
+                    span {
+                        line-height: 0.3;
+                    }
+                }
+
+                &:hover {
+                    span {
+                        color: $loopex-green-hover;
+                    }
+                }
+            }
+        }
+    }
+
+    .marketplace__body {
+        border: 1px solid $input-border;
+        border-top: 0;
+        height: 480px;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 50%;
+        }
+    }
+}

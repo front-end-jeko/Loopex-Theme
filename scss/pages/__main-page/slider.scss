@@ -1,0 +1,153 @@
+.loopex__announcements {
+    .loopex__container {
+        display: flex;
+        margin: 30px 0;
+    }
+}
+
+.loopex__announcements {
+    .loopex__announcements-item {
+        height: 200px;
+        background-color: #12191f;
+        border: 1px solid #324754;
+        width: 50%;
+        position: relative;
+
+        &:nth-child(1){
+            margin-right: 30px;
+        }
+
+        &:nth-child(2){
+            margin-left: 30px;
+        }
+
+        .announcements__title {
+            color: $loopex-green;
+            text-align: center;
+            font-size: 22px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #324754;
+        }
+
+        .dots { 
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 7px;
+
+            .dot {
+                cursor: pointer;
+                height: 3px;
+                width: 30px;
+                margin: 0 2px;
+                background-color: #545353;
+                display: inline-block;
+                -webkit-transition: background-color 0.6s ease;
+                -o-transition: background-color 0.6s ease;
+                transition: background-color 0.6s ease;
+            
+                &:hover {
+                    background-color: #717171;
+                }
+            
+                &.active {
+                    background-color: #fff;
+                }
+            }
+        }
+  
+        
+        
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    height: 161px;
+
+    .mySlides  {
+        width: 100%;
+        height: 100%;
+    }
+
+    .prev, 
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      padding: 16px;
+      color: #324754;
+      font-weight: bold;
+      font-size: 18px;
+      -webkit-transition: 0.6s ease;
+      -o-transition: 0.6s ease;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+  
+      &:hover {
+          color: $loopex-green-hover;
+      }
+    }
+
+      
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  
+  .text {
+    color: #f2f2f2;
+    font-size: 30px;
+    @include center;
+  }
+
+  .dots {
+    text-align: center;
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+  }  
+
+
+    
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+  }
+  
+
+    }
+}
+
+
+ 
+  
+
+
+  
+
