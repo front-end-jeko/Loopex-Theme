@@ -20,6 +20,14 @@ $('.stopPropagation').click(function(e){
 });
 
 
+// stop propagation all popup
+document.querySelectorAll('.loopex__popup-container .loopex__popup').forEach(function(popup){
+    popup.addEventListener('click', function(e){
+        e.stopPropagation();
+    });
+});
+
+
 // close popups by x icon
 var closePopup = document.querySelectorAll('.popup__close');
 closePopup.forEach(function(close){
@@ -39,6 +47,25 @@ document.addEventListener('click', function(){
 });
 
 
+
+
+// popups
+var atags = document.querySelectorAll('.atag');
+atags.forEach(function(a){
+    var dataId = a.getAttribute('data-id');
+
+    a.addEventListener('click', function(){
+        document.querySelectorAll('.loopex__popup-container').forEach(function(pop){
+            if(pop.classList.contains(dataId) === true){
+                var newPopup = pop.classList.add('active');
+            } else if (pop.classList.contains('active') === true){
+                pop.classList.remove('active');           
+            }
+        });
+    });
+});
+    
+    
 
 
 
@@ -97,31 +124,64 @@ $(document).ready(function () {
     
         return false;
     });
-    });
+});
 
 
 
-    // password eye visibility
-    var eyeIcon = document.querySelectorAll('.password__eye');
-    eyeIcon.forEach(function(eye){
-        eye.addEventListener('click', showpass);
+// password eye visibility
+var eyeIcon = document.querySelectorAll('.password__eye');
+eyeIcon.forEach(function(eye){
+    eye.addEventListener('click', showpass);
 
-        function showpass(){
-            eye.classList.toggle('show');
+    function showpass(){
+        eye.classList.toggle('show');
 
-            if(eye.classList.contains('show') == true){
-                var input = eye.previousElementSibling;
+        if(eye.classList.contains('show') == true){
+            var input = eye.previousElementSibling;
 
-                input.type = 'text';
-            
-            } else {
-                var input = eye.previousElementSibling;
+            input.type = 'text';
+        
+        } else {
+            var input = eye.previousElementSibling;
 
-                input.type = 'password';
-            }
+            input.type = 'password';
         }
-    });
+    }
+});
 
-  
 
+
+
+
+// time
+// Set the date we're counting down to
+var countDownDate = new Date("jun 5, 2019 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
     
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  var mydays = document.querySelector(".timer__number.days").innerHTML = days;
+  var myhours = document.querySelector(".timer__number.hours").innerHTML = hours;
+  var myminutes = document.querySelector(".timer__number.minutes").innerHTML = minutes;
+  var myseconds = document.querySelector(".timer__number.seconds").innerHTML = seconds;
+
+
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.querySelector(".available__time").innerHTML = "EXPIRED";
+  }
+}, 1000);

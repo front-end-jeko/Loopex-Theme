@@ -1,0 +1,36 @@
+.available__time {
+    height: 50%;
+    @include flex($justify: center, $align: center);
+
+    .timer {
+        padding: 5px;
+        border-radius: 3px;
+        border: 1px solid #314552;
+        margin-right: 3px;
+
+        .timer__child {
+            .timer__number {
+                color: $loopex-green-hover;
+                font-size: 26px;
+                width: 40px;
+                border-radius: 3px;
+                padding: 3px;
+                border: 1px solid $loopex-green;
+                @include flex($justify: center, $align: center);
+            }
+
+            .days__text {
+                font-size: 10px;
+                color: #fff;
+                text-align: center;
+                line-height: 1.3;
+            }
+        }
+    }
+}
+
+.trading__automation {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}

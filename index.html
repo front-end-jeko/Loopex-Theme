@@ -108,6 +108,38 @@
             <div class="loopex__announcements-item">
                 <div class="announcements__title">Upcoming Event</div>
 
+                <div class="available__time">
+                    <div class="timer">
+                        <div class="timer__child">
+                            <div class="timer__number days"></div>
+                            <div class="days__text">Days</div>
+                        </div>
+                    </div>
+    
+                    <div class="timer">
+                        <div class="timer__child">
+                            <div class="timer__number hours"></div>
+                            <div class="days__text">Hours</div>
+                        </div>
+                    </div>
+
+                    <div class="timer">
+                        <div class="timer__child">
+                            <div class="timer__number minutes"></div>
+                            <div class="days__text">Minutes</div>
+                        </div>
+                    </div>
+
+
+                    <div class="timer">
+                        <div class="timer__child">
+                            <div class="timer__number seconds"></div>
+                            <div class="days__text">Seconds</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="trading__automation">Trading Automation</h2>
             </div>
         </div>
     </section>
@@ -215,7 +247,6 @@
 
 
 
-
     <!-- contact -->
     <section class="loopex__contact">
         <div class="loopex__contact-container">
@@ -310,11 +341,10 @@
 
 
 
-    <!-- popups -->
 
     <!-- login -->
     <div class="loopex__popup-container loopex__popup-close login__popup" data-popup="login">
-        <div class="loopex__popup stopPropagation">
+        <div class="loopex__popup">
             <div class="popup__close">
                 <span>&times;</span>
             </div>
@@ -327,8 +357,10 @@
                 </div>
 
                 <div class="loopex__form-group">
-                    <input type="password" class="loopex__input" placeholder="Password">
-                    <span class="icon-eye password__eye"></span>
+                    <div class="myinput relative">
+                        <input type="password" class="loopex__input" placeholder="Password">
+                        <span class="icon-eye password__eye"></span>
+                    </div>
                     <div class="input__error">Fill out the field</div>
                 </div>
 
@@ -341,8 +373,8 @@
                 </div>
 
                 <div class="forget__pass">
-                    <a href="#">Forgot password?</a>
-                    <p>Don't have an account?<a href="#"> Register</a></p>
+                    <a class="atag" href="#" data-id="reset__popup">Forgot password?</a>
+                    <p>Don't have an account?<a class="atag" href="#" data-id="register__popup"> Register</a></p>
                 </div>
             </form>
         </div>
@@ -350,7 +382,7 @@
 
     <!-- register -->
     <div class="loopex__popup-container loopex__popup-close register__popup" data-popup="register">
-        <div class="loopex__popup stopPropagation">
+        <div class="loopex__popup">
             <div class="popup__close">
                 <span>&times;</span>
             </div>
@@ -373,20 +405,24 @@
                 </div>
 
                 <div class="loopex__form-group">
-                    <input type="password" class="loopex__input" placeholder="Password">
-                    <span class="icon-eye password__eye"></span>
+                    <div class="myinput relative">
+                        <input type="password" class="loopex__input" placeholder="Password">
+                        <span class="icon-eye password__eye"></span>
+                    </div>
                     <div class="input__error">Fill out the field</div>
                 </div>
 
                 <div class="loopex__form-group">
-                    <input type="password" class="loopex__input" placeholder="Repeat Password">
-                    <span class="icon-eye password__eye"></span>
+                    <div class="myinput relative">
+                        <input type="password" class="loopex__input" placeholder="Repeat Password">
+                        <span class="icon-eye password__eye"></span>
+                    </div>
                     <div class="input__error">Fill out the field</div>                 
                 </div>
 
-                <div class="loopex__form-group stopPropagation">
+                <div class="loopex__form-group">
                     <label for="referalcode" class="referal__code-label open__popup" data-popup="referal">Enter the referral code</label>
-                    <input type="password" id="referal" class="loopex__input loopex__popup-close referalcode stopPropagation" data-popup="referal" placeholder="Referral code">
+                    <input type="password" id="referal" class="loopex__input loopex__popup-close referalcode" data-popup="referal" placeholder="Referral code">
                     <div class="input__error">Fill out the field</div>
                 </div>
 
@@ -408,7 +444,7 @@
                 </div>
 
                 <div class="forget__pass">
-                    <p>Don't have an account?<a href="#">Log in</a></p>
+                    <p>Don't have an account?<a class="atag" href="#" data-id="login__popup">Log in</a></p>
                 </div>
             </form>
         </div>
@@ -438,7 +474,6 @@
             </form>
         </div>
     </div>
-
 
 
     <!-- fixed social -->

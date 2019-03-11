@@ -3,7 +3,8 @@
   margin-bottom: 13px;
 
     .password__eye {
-      @include position($top: 9px, $right: 10px);
+      @include position($top: 50%, $right: 10px);
+      transform: translateY(-50%);
       color: #757575;
       cursor: pointer;
 
