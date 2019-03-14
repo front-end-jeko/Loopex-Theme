@@ -40,25 +40,88 @@
         <header class="loopex__header">
             <div class="header-left flex align-items">
                 <div class="loopex__logo">
-                    <img src="images/logo_green.png" alt="loopex logo">
+                    <a href="/"><img src="images/logo_green.png" alt="loopex logo"></a>
                 </div>
 
                 <ul class="header__ul flex">
                     <li class="header__li"><a class="header__a" href="#">Exchange</a></li>
+                    <li class="header__li relative xlp__window dropdown"><a class="header__a" href="#">XLP</a>
+                    
+                        <div class="xlp__content"> 
+                            <div class="xlp__child">
+                                <div class="child__item">
+                                    <div class="xlp__title">XLP Balance</div>
+                                    <div class="xlp__result">50 XLP</div>
+                                </div>
+
+                                <div class="child__item">
+                                    <div class="xlp__title">VIP Status</div>
+                                    <div class="xlp__result">Disabled</div>
+                                </div>
+
+                                <div class="child__item">
+                                    <div class="xlp__title">Use XLP tokens to pay trading fees <br> (50% discount)</div>
+                                    <div class="xlp__result">
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="child__item flex-end">
+                                    <a class="hover-green about__xlp" href="#">About XLP</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li class="header__li"><a class="header__a" href="#">Loopex ICO</a></li>
                 </ul>
             </div>
 
             <div class="header-right flex">
                 <ul class="header__ul flex align-items">
+    
+                    <li class="header__li dropdown"><a class="header__a" href="#">Orders</a>
+                        <div class="dropdown__li">
+                            <ul>
+                                <li><a href="#">Open Orders</a></li>
+                                <li><a href="#">Smart Orders</a></li>
+                                <li><a href="#">Order History</a></li>
+                                <li><a href="#">Trade History</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="header__li dropdown"><a class="header__a" href="#">Funds</a>
+                        <div class="dropdown__li">
+                            <ul>
+                                <li><a href="#">Balance</a></li>
+                                <li><a href="#">Deposit History</a></li>
+                                <li><a href="#">Withdrawal History</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="header__li dropdown"><a class="header__a" href="#"><span class="icon-account-icon"></span></a>
+                        <div class="dropdown__li">
+                            <ul>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Security</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
                     <li class="header__li"><a class="header__a open__popup" href="#" data-popup="register">Register</a></li>
                     <li class="header__li"><a class="header__a open__popup" href="#" data-popup="login">Log in</a></li>
-                    <li class="header__li lang__li open__popup" data-popup="lang"><a class="header__a loopex__popup-close" href="javascript:;" data-popup="lang">ENG</a>
+
+                    <li class="header__li lang__li dropdown"><a class="header__a" href="javascript:;">ENG</a>
                         <div class="lang__menu"></div>
                         <ul class="lang__content stopPropagation">
                             <li><a href="#">Русский</a></li>
                             <li><a href="#">ქართული</a></li>
-                        </ul>
+                        </ul>                      
                     </li>
                 </ul>
             </div>
@@ -282,8 +345,8 @@
                     <li class="footer__menu-li"><a href="#">about</a></li>
                     <li class="footer__menu-li"><a href="#">Important Information</a></li>
                     <li class="footer__menu-li"><a href="#">contact</a></li>
-                    <li class="footer__menu-li"><a href="#">Terms and Conditions</a></li>
-                    <li class="footer__menu-li"><a href="#">Privacy Policy</a></li>
+                    <li class="footer__menu-li"><a href="terms.html">Terms and Conditions</a></li>
+                    <li class="footer__menu-li"><a href="privacy.html">Privacy Policy</a></li>
                 </ul>
 
                 <ul class="footer__menu-ul">
@@ -338,7 +401,6 @@
             </div>
         </div>
     </footer>
-
 
 
 

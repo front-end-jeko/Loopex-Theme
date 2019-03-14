@@ -13,14 +13,6 @@
       }
     }
 
-    .referalcode {
-      display: none;
-
-      &.active {
-        display: block;
-      }
-    }
-
     .input__error {
       color: $loopex-error-color;
       font-size: 15px;

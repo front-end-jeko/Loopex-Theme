@@ -1,0 +1,57 @@
+.loopex__table {
+    width: 100%;
+    border: 1px solid $input-border;
+
+    .table__th {
+        color: $loopex-green;
+        text-align: center;
+    }
+
+    .table__td {
+        text-align: center;
+    }
+
+    .table__tr {
+        border-bottom: 1px solid $input-border;
+
+        &:last-child{
+            border-bottom: 0;
+        }
+
+        .table__th {
+            border-right: 1px solid $input-border;
+
+            &:last-child{
+                border-right: 0;
+            }
+        }
+
+        .table__td {
+            border-right: 1px solid $input-border;
+
+            &:last-child{
+                border-right: 0;
+            }
+        }
+    }
+}
+
+.fees__table2 {
+    width: 900px;
+    margin: 0 auto;
+
+    .table__tr {
+        height: 41px;
+        line-height: 40px;
+
+
+        &:first-child{
+            height: 60px;
+            line-height: 60px;
+        }
+
+        .table__td {
+            color: #97a5a3;
+        }
+    }
+}

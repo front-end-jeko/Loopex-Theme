@@ -33,6 +33,7 @@
     .header-right {
         padding-right: 50px;
         .header__li {
+            position: relative;
             margin-right: 15px;
 
             .header__a {
@@ -44,6 +45,55 @@
                     color: $loopex-green;
                 }
             }
+
+            .dropdown__li {
+                position: absolute;
+                right: -9px;
+                top: 29px;
+                padding-top: 5px;
+                padding-bottom: 10px;
+                padding-left: 25px;
+                padding-right: 0;
+                line-height: 1.5;
+                background: rgba(5,9,11,0.83);
+                display: none;
+
+                ul {
+                    padding-right: 17px;
+
+                    li:hover a {
+                        color: $loopex-green;
+                    }
+
+                    a {
+                        color: #fff;
+                        font-size: 17px;
+                        text-align: right;
+                        white-space: nowrap;
+                        display: block;
+                    }
+                }
+            }
+
+            .icon-account-icon {
+                font-size: 30px;
+            }
+
+            &.active {
+                .icon-account-icon {
+                    color: #3a8980;
+                }
+            }
+        }
+
+        .dropdown.active {
+            .header__a {
+                color: $loopex-green;
+            }
+
+            .dropdown__li {
+                display: block;
+            }
         }
 
         .lang__li {
@@ -51,10 +101,8 @@
             @include flex($align: center);
             margin-right: 10px;
 
-            .header__a {
-                &.active ~ .lang__content{
-                    display: block;
-                }
+            &.active .lang__content {
+                display: block;
             }
             
 

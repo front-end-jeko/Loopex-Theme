@@ -1,0 +1,45 @@
+.xlp__window {
+    &.active {
+        .header__a {
+            color: $loopex-green !important;
+        }
+
+        .xlp__content {
+            display: block;
+        }
+    }
+
+
+    .xlp__content {
+        position: absolute;
+        left: -50px;
+        background: rgba(1, 1, 1, 0.76);
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+        .xlp__child {
+            padding: 10px 20px;
+        }
+
+        .child__item {
+            width: 450px;
+            height: 35px;
+            @include flex($justify: space-between, $align: center);
+
+            .xlp__title {
+                color: #fff;
+            }
+
+            .xlp__result {
+                color: $loopex-green;
+            }
+
+            .about__xlp {
+                color: $loopex-green;
+            }
+        }
+    }
+}

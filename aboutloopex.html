@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loopex Theme</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- google -->
+    <meta name="description" content="Loopex is the innovative platform, providing to customers advanced tools  for selling/buying cryptocurrencies, which can help to make trading on the exchange as simple and automated as possible.">
+    <meta name="keywords" content="bitcoin, cryptocurrency, exchange, ethereum, ripple, btc, trade, loopex ">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <!-- header -->
+    <header class="loopex__header">
+        <div class="header-left flex align-items">
+            <div class="loopex__logo">
+               <a href="/"><img src="images/logo_green.png" alt="loopex logo"></a>
+            </div>
+
+            <ul class="header__ul flex">
+                <li class="header__li"><a class="header__a" href="#">Exchange</a></li>
+                <li class="header__li relative xlp__window dropdown"><a class="header__a" href="#">XLP</a>
+                
+                    <div class="xlp__content"> 
+                        <div class="xlp__child">
+                            <div class="child__item">
+                                <div class="xlp__title">XLP Balance</div>
+                                <div class="xlp__result">50 XLP</div>
+                            </div>
+
+                            <div class="child__item">
+                                <div class="xlp__title">VIP Status</div>
+                                <div class="xlp__result">Disabled</div>
+                            </div>
+
+                            <div class="child__item">
+                                <div class="xlp__title">Use XLP tokens to pay trading fees <br> (50% discount)</div>
+                                <div class="xlp__result">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="child__item flex-end">
+                                <a class="hover-green about__xlp" href="#">About XLP</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="header__li"><a class="header__a" href="#">Loopex ICO</a></li>
+            </ul>
+        </div>
+
+        <div class="header-right flex">
+            <ul class="header__ul flex align-items">
+
+                <li class="header__li dropdown"><a class="header__a" href="#">Orders</a>
+                    <div class="dropdown__li">
+                        <ul>
+                            <li><a href="#">Open Orders</a></li>
+                            <li><a href="#">Smart Orders</a></li>
+                            <li><a href="#">Order History</a></li>
+                            <li><a href="#">Trade History</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="header__li dropdown"><a class="header__a" href="#">Funds</a>
+                    <div class="dropdown__li">
+                        <ul>
+                            <li><a href="#">Balance</a></li>
+                            <li><a href="#">Deposit History</a></li>
+                            <li><a href="#">Withdrawal History</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="header__li dropdown"><a class="header__a" href="#"><span class="icon-account-icon"></span></a>
+                    <div class="dropdown__li">
+                        <ul>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="header__li"><a class="header__a open__popup" href="#" data-popup="register">Register</a></li>
+                <li class="header__li"><a class="header__a open__popup" href="#" data-popup="login">Log in</a></li>
+
+                <li class="header__li lang__li dropdown"><a class="header__a" href="javascript:;">ENG</a>
+                    <div class="lang__menu"></div>
+                    <ul class="lang__content stopPropagation">
+                        <li><a href="#">Русский</a></li>
+                        <li><a href="#">ქართული</a></li>
+                    </ul>                      
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+
+
+    
+    <div class="wrapper wrapper__fluid">
+        <div class="about__loopex-parent">
+            <div class="about__loopex-right">
+                <ul>
+                    <li href="#loopex" class="about__li"><a>Loopex</a></li>
+                    <li href="#team" class="about__li"><a>Team</a></li>
+                    <li href="#ordertype" class="about__li"><a>Order Types</a></li>
+                    <li href="#token" class="about__li"><a>Loopex Token (XLP)</a></li>
+                    <li href="#fees" class="about__li"><a>Fees</a></li>
+                </ul>
+            </div>
+
+            <div class="about__loopex-left" id="loopex">
+                <p>Loopex is an international platform, which provides various cryptocurrency services to its customers. We create cryptocurrency financial center with the help of blockchain technologies. Our mission is to bring the exchange of crypto assets to the new level. Loopex team does everything to make trading on the platform as much comfortable, convenient, safe and inexpensive as possible. </p>
+            
+                <h2 class="about__right-title">Our Advantages</h2>
+
+                <div class="loopex__About__child">
+                    <div class="loopex__about__item">
+                        <img src="images/advantige/icons-03.png" alt="advantige1">
+                        <h4 class="advantige--title">Strong, Success-oriented Team</h4>
+                        <p>The Loopex team consists of professionals from cryptocurrency, programming, finance and law fields. We believe in potential of blockchain and aim to create new opportunities that will be available to everyone.</p>
+                    </div>
+
+                    <div class="loopex__about__item">
+                        <img src="images/advantige/icons-02.png" alt="advantige2">
+                        <h4 class="advantige--title">Automation of Trading</h4>
+                        <p>Loopex is the innovative platform, providing to customers <span class="loopex-green loopex hover-green cursor-pointer">advanced tools</span> for selling/buying cryptocurrencies, which can help to make trading on the exchange as simple and automated as possible.</p>
+                    </div>
+
+                    <div class="loopex__about__item">
+                        <img src="images/advantige/icons-01.png" alt="advantige3">
+                        <h4 class="advantige--title">Minimum Commission Fees</h4>
+                        <p><span class="loopex-green loopex hover-green cursor-pointer">The trading commission</span>  for cryptocurrency exchange on the Loopex platform does not exceed 0.1%. By paying fees with the  <span class="loopex-green loopex hover-green cursor-pointer">XLP token</span>, users receive a 50% discount on execution of all trading operations. If the user has 400 000 XLP and more on the Loopex account, he receives VIP status, which makes his trading free of charge.</p>
+                    </div>
+
+                    <div class="loopex__about__item">
+                        <img src="images/advantige/icons-04.png" alt="advantige4">
+                        <h4 class="advantige--title">Security</h4>
+                        <p>Loopex provides users with the opportunity to fully control devices and IP addresses from which they access their accounts. Also, security level can be enhanced by using various two factor authentication options.
+                                Besides this, we have developed and implemented the system of distributed storage of database and digital assets.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about__loopex-left" id="team">
+                <div class="loopex__About__child">
+                    <div class="loopex__about__item">
+                        <div class="member__img" style="background-image: url('images/founders/Ilia.jpeg'); background-size: cover; background-position: center">
+                            <a href="#" class="lindin__icon">
+                                <span class="icon-linkedin"></span>
+                            </a>
+                        </div>
+                        <h4 class="author__name">Ilia Sikharulovi</h4>
+                        <h5 class="member__position">Founder & CEO</h5>
+                        <p>Before getting involved into the cryptocurrency field, Ilia graduated from Georgian Technical University, receiving a Master's Degree in Power Engineering. At the same time, he began to work in the Georgian State Electrosystem, and was involved in the software implementation process for modeling emergency situations in the power system of Georgia and calculating relay protection settings. In May 2018, together with Levan Odishelidze, Ilia founded a team, which began actively working on the project Loopex.</p>
+                    </div>
+
+                    <div class="loopex__about__item">
+                        <div class="member__img" style="background-image: url('images/founders/levan.jpg'); background-size: cover; background-position: center">
+                            <a href="#" class="lindin__icon">
+                                <span class="icon-linkedin"></span>
+                            </a>
+                        </div>
+                        <h4 class="author__name">Levan Odishelidze</h4>
+                        <h5 class="member__position">Founder & CTO</h5>
+                        <p>Levan graduated from Georgian Technical University with a Master’s Degree in Power Engineering. In 2016, he started to work as a specialist on the implementation of the unified program for planning and asset management at the Georgian State Electrosystem. Due to the excellent knowledge of programming, six months later, he became the lead coordinator of the project. Since May 2018, Levan has been working on the creation of Loopex platform.</p>
+                    </div>
+
+                    <div class="loopex__about__item">
+                        <div class="member__img" style="background-image: url('images/founders/nino.jpg'); background-size: cover; background-position: center">
+                            <a href="#" class="lindin__icon">
+                                <span class="icon-linkedin"></span>
+                            </a>
+                        </div>
+                        <h4 class="author__name">Nino Katukia</h4>
+                        <h5 class="member__position">CFO</h5>
+                        <p>Nino graduated the faculty of Economics at Tbilisi State University. In 2011-2017 she worked as an auditor at the Revenue Service of Georgia. Since 2017 she has been working as a consultant in one of the largest international audit companies. In early 2017, she became interested in cryptocurrencies and in May 2018 joined the team, contributing to the creation of Loopex. At this stage, Nino is responsible for financial issues related to the project.</p>
+                    </div>
+
+                    <div class="loopex__about__item">
+                        <div class="member__img" style="background-image: url('images/founders/jeko.png'); background-size: cover; background-position: center">
+                            <a href="#" class="lindin__icon">
+                                <span class="icon-linkedin"></span>
+                            </a>
+                        </div>
+                        <h4 class="author__name">Jeko Tediashvili</h4>
+                        <h5 class="member__position">Developer</h5>
+                        <p>Jeko - a student of the faculty of Informational Technology at Georgian Technical University. At the same time, he graduated the course of Programming and in May 2018 joined the Loopex team as an intern, later becoming a full-time employee. He is working on the front-end development of the client side of the website.</p>
+                    </div>
+
+                    <div class="loopex__about__item">
+                        <div class="member__img" style="background-image: url('images/founders/zura.jpg'); background-size: cover; background-position: center">
+                            <a href="#" class="lindin__icon">
+                                <span class="icon-linkedin"></span>
+                            </a>
+                        </div>
+                        <h4 class="author__name">Zurabi Arveladze</h4>
+                        <h5 class="member__position">Lawyer</h5>
+                        <p>Zurabi graduated from Tbilisi State University, receiving Master’s Degree in Law. Since May 2015, he has been working as a leading lawyer in the largest energy company of Georgia – SakRusenergo. His work includes representing the interests of the company to foreign partners and cooperating with the Energy Commission of the European Union. Since July 2018, he is actively working with the Loopex team on the development of the project. His responsibilities include managing legal issues related to the project.</p>
+                    </div>
+
+                    <div class="loopex__about__item">
+                        <div class="member__img" style="background-image: url('images/founders/Tiko.jpeg'); background-size: cover; background-position: center">
+                            <a href="#" class="lindin__icon">
+                                <span class="icon-linkedin"></span>
+                            </a>
+                        </div>
+                        <h4 class="author__name">Tinatin Kartskhia</h4>
+                        <h5 class="member__position">Designer</h5>
+                        <p>Loopex provides users with the opportunity to fully control devices and IP addresses from which they access their accounts. Also, security level can be enhanced by using various two factor authentication options.
+                                Besides this, we have developed and implemented the system of distributed storage of database and digital assets.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about__loopex-left" id="ordertype">
+                <p>The Loopex exchange platform is equipped with various features giving users possibilities for placing different types of orders. We offer our clients the opportunity to trade with conventional Market Orders and Limit Orders, as well as more professional Stop Orders, Smart Orders and Trailing Stops. A rich arsenal of trading tools on the Loopex platform allows users to make trading process as much automated as possible, which in turn increases opportunity for risk minimization and profit growth even in the absence of constant access to the exchange.
+                    The platform offers following options of placing orders:</p>
+
+                    <div class="about__orders">
+                        <h2 class="aboutorder__title">Market (Market Order)</h2> 
+                        <p>This order is a request, which shows user's willingness to buy or sell the asset at the current bid price or demand price prevailing on the market.</p>                   
+                    </div>
+
+                    <div class="about__orders">
+                        <h2 class="aboutorder__title">Limit (Limit Order)</h2> 
+                        <p>With this order, user can set maximum price at which he is willing to buy or minimum price at which he is ready to sell the asset. Placing an order with price limitation gives opportunity to users for making a deal at a price, which is not lower/higher than specified in the order.</p>                   
+                    </div>
+
+                    <div class="about__orders">
+                        <h2 class="aboutorder__title">Stop-Market</h2> 
+                        <p>This order turns into a Market Order, once the market price reaches the price (trigger price) specified in user's order.</p>                   
+                    </div>
+
+                    <div class="about__orders">
+                        <h2 class="aboutorder__title">Stop-Limit</h2> 
+                        <p>This order represent a combination of two types of orders: Stop and Limit. After the market price reaches the user specified price (trigger price), earlier prepared Limit Order will be placed automatically.</p>                   
+                    </div>
+
+                    <div class="about__orders">
+                        <h2 class="aboutorder__title">Smart-Market</h2> 
+                        <p>This order is a combination of two independent Stop-Market orders. After the market price reaches one of the two prices specified by user (Trigger Price 1, Trigger price 2), Stop Order will be placed with consideration of the activated trigger price. The second order (Trigger Price) will be canceled. Smart Orders provide opportunity for simultaneous placement of Stop Loss and Take Profit, as well as development of various purchase strategies.</p>                   
+                    </div>
+
+                    <div class="about__orders">
+                        <h2 class="aboutorder__title">Smart-Limit</h2> 
+                        <p>Smart-Limit orders have the same features as Smart-Market orders. The difference is that the Smart-Limit is a combination of two independent Stop-Limit orders. This allows user to place an order with limitation of the maximum purchase price and the minimum selling price.</p>                   
+                    </div>
+
+                    <div class="about__orders">
+                        <h2 class="aboutorder__title">Trailing Stop</h2> 
+                        <p>Using this type of order gives trader an opportunity to minimize risks and at the same time increase his capital without any limitations.
+                                To place such order, user must specify the number of coins he wants to buy/sell, and indicate the distance to which the Trailing Stop will fall behind the market price. For example, in case of selling an asset, the user sets the distance to which the Trailing Stop must fall behind the market price, and indicates the number of coins he wants to sell. If the market price moves up, Trailing Stop will follow it and distance between them will not change. If market price falls down, Trailing Stop level will freeze and the distance between two prices will be reduced. When the distance reaches zero, the level of Trailing Stop will be the same as the market price and the Market Order with pre-defined number of coins will be placed automatically. With this tool, users can easily minimize amount of anticipated losses without any limitation to probable profits.</p>                   
+                    </div>
+            </div>
+
+            <div class="about__loopex-left" id="token">
+                <div class="token">
+                    <img class="coin__logo" src="images/Coin-Logo.png" alt="coin logo">
+
+                    <p> Cryptocurrency Loopex Token (XLP) is a digital asset integrated into the Loopex platform to provide improved trading conditions. By paying with XLP, user receives a 50% discount on all trading transactions. If the user has 400,000 XLP or more on his exchange account, VIP status will be assigned to him automatically. Trading on the Loopex platform is free of charge for VIP clients.
+                            Other than that, users can automatically convert small, unusable for trading amounts of cryptocurrencies into XLP tokens, which in turn are used for payment of commission fees and for trading in various pairs. The price of the XLP token during automatic conversion is tied to its market price. </p>      
+                </div>
+            </div>
+
+            <div class="about__loopex-left" id="fees">
+                <h2 class="about__right-title">Trading Fees</h2>
+
+                <div class="fees__table">
+                    <div class="fees__row">
+                        <div class="fees__title">
+                            <h2>Level</h2>
+                        </div>
+                        <div class="fees__title">
+                            <h2>Maker</h2>
+                            <h2>Taker</h2>
+                        </div>
+                        <div class="fees__title">
+                            <h3>XLP</h3>
+                            <div class="fees__bottom">
+                                <h2>Maker</h2>
+                                <h2>Taker</h2>  
+                            </div>                        
+                        </div>
+                    </div>
+
+
+                    <div class="fees__row">
+                        <div class="fees__title">
+                            <h2>General</h2>
+                        </div>
+                        <div class="fees__title">
+                            <h2>0.1%</h2>
+                            <h2>0.1%</h2>
+                        </div>
+                        <div class="fees__title">
+                            <h2>0.05%</h2>
+                            <h2>0.05%</h2>                         
+                        </div>
+                    </div>
+
+                    <div class="fees__row">
+                        <div class="fees__title">
+                            <h2>VIP</h2>
+                        </div>
+                        <div class="fees__title fee__bg">
+                            <h2>Free Trading</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="about__right-title">Deposit/Withdrawal Fees & Limits</h2>
+
+
+                <table class="loopex__table fees__table2">
+                    <tr class="table__tr">
+                      <th class="table__th">Currency Name</th>
+                      <th class="table__th">Symbol</th> 
+                      <th class="table__th">Deposit Fee</th>
+                      <th class="table__th">Withdrawal Fee</th> 
+                      <th class="table__th">Minimum Withdrawal</th> 
+                    </tr>
+                    <tr class="table__tr">
+                      <td class="table__td">Loopex Token</td>
+                      <td class="table__td">XLP</td> 
+                      <td class="table__td">0</td>
+                      <td class="table__td">500</td>
+                      <td class="table__td">700</td>
+                    </tr>
+                    <tr class="table__tr">
+                      <td class="table__td">Bitcoin</td>
+                      <td class="table__td">BTC</td> 
+                      <td class="table__td">0</td>
+                      <td class="table__td">0.0005</td>
+                      <td class="table__td">0.002</td>
+                    </tr>
+
+                    <tr class="table__tr">
+                      <td class="table__td">Ethereum</td>
+                      <td class="table__td">ETH</td> 
+                      <td class="table__td">0</td>
+                      <td class="table__td">0.01</td>
+                      <td class="table__td">0.02</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- footer -->
+    <footer class="loopex__footer">
+        <div class="loopex__container">
+            <div class="footer__menu">
+                <ul class="footer__menu-ul">
+                    <li class="footer__menu-li"><a href="#">about</a></li>
+                    <li class="footer__menu-li"><a href="#">Important Information</a></li>
+                    <li class="footer__menu-li"><a href="#">contact</a></li>
+                    <li class="footer__menu-li"><a href="terms.html">Terms and Conditions</a></li>
+                    <li class="footer__menu-li"><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+
+                <ul class="footer__menu-ul">
+                    <li class="footer__menu-li"><a href="#">Loopex ICO</a></li>
+                    <li class="footer__menu-li"><a href="#">fees</a></li>
+                    <li class="footer__menu-li"><a href="#">White Paper</a></li>
+                </ul>
+
+                <div class="subscribe footer__menu-ul">
+                    <div class="social__icons">
+                        <ul>
+                            <li><span class="icon-twitter1"></span>
+                            
+                                <div class="tooltip">
+                                    <h5>Twitter</h5>
+                                </div>
+                            </li>
+                            <li><span class="icon-facebook"></span>
+                                <div class="tooltip">
+                                    <h5>Facebook</h5>
+                                </div>
+                            </li>
+                            <li><span class="icon-telegram1"></span>
+                                <div class="tooltip">
+                                    <h5>Telegram Channel</h5>
+                                </div>
+                            </li>
+                            <li><span class="icon-telegram1"></span>
+                                <div class="tooltip">
+                                    <h5>Telegram Group</h5>
+                                </div>
+                            </li>
+                            <li><span class="icon-instagram1"></span>
+                                <div class="tooltip">
+                                    <h5>Instagram</h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sub">
+                        <div class="sub__group">
+                            <input type="text" class="sub__input" placeholder="Email">
+                            <span>Subscribe</span>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy 2018-2019 Loopex.io <span>All rights reserved</span></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- login -->
+    <div class="loopex__popup-container loopex__popup-close login__popup" data-popup="login">
+        <div class="loopex__popup">
+            <div class="popup__close">
+                <span>&times;</span>
+            </div>
+            <h4 class="popup__title">Log In</h4>
+
+            <form action="javascript:;" class="loopex__popup-form">
+                <div class="loopex__form-group">
+                    <input type="text" class="loopex__input" placeholder="Email">
+                    <div class="input__error">Fill out the field</div>
+                </div>
+
+                <div class="loopex__form-group">
+                    <div class="myinput relative">
+                        <input type="password" class="loopex__input" placeholder="Password">
+                        <span class="icon-eye password__eye"></span>
+                    </div>
+                    <div class="input__error">Fill out the field</div>
+                </div>
+
+                <div class="form__btn">
+                    <button type="submit" class="btn btn--green">Log in</button>
+
+                    <div class="cssload-container">
+                        <div class="cssload-speeding-wheel"></div>
+                    </div>
+                </div>
+
+                <div class="forget__pass">
+                    <a class="atag" href="#" data-id="reset__popup">Forgot password?</a>
+                    <p>Don't have an account?<a class="atag" href="#" data-id="register__popup"> Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- register -->
+    <div class="loopex__popup-container loopex__popup-close register__popup" data-popup="register">
+        <div class="loopex__popup">
+            <div class="popup__close">
+                <span>&times;</span>
+            </div>
+            <h4 class="popup__title">Create Your Account</h4>
+
+            <form action="javascript:;" class="loopex__popup-form">
+                <div class="loopex__form-group">
+                    <input type="text" class="loopex__input" placeholder="Email">
+                    <div class="input__error">Fill out the field</div>
+                </div>
+
+                <div class="loopex__form-group">
+                    <input type="text" class="loopex__input" placeholder="Name">
+                    <div class="input__error">Fill out the field</div>
+                </div>
+
+                <div class="loopex__form-group">
+                    <input type="text" class="loopex__input" placeholder="Surname">
+                    <div class="input__error">Fill out the field</div>
+                </div>
+
+                <div class="loopex__form-group">
+                    <div class="myinput relative">
+                        <input type="password" class="loopex__input" placeholder="Password">
+                        <span class="icon-eye password__eye"></span>
+                    </div>
+                    <div class="input__error">Fill out the field</div>
+                </div>
+
+                <div class="loopex__form-group">
+                    <div class="myinput relative">
+                        <input type="password" class="loopex__input" placeholder="Repeat Password">
+                        <span class="icon-eye password__eye"></span>
+                    </div>
+                    <div class="input__error">Fill out the field</div>                 
+                </div>
+
+                <div class="loopex__form-group">
+                    <label for="referalcode" class="referal__code-label open__popup" data-popup="referal">Enter the referral code</label>
+                    <input type="password" id="referal" class="loopex__input loopex__popup-close referalcode" data-popup="referal" placeholder="Referral code">
+                    <div class="input__error">Fill out the field</div>
+                </div>
+
+                <div class="agree__terms">
+                    <label class="checkmark__container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <span>I accept<a href="#" class="hover-green" target="_blank">the Terms and Conditions</a></span>
+                        <span>and<a href="#" class="hover-green" target="_blank">the Privacy Policy</a></span>
+                    </label>
+                </div>
+
+                <div class="form__btn">
+                    <button type="submit" class="btn btn--green">register</button>
+
+                    <div class="cssload-container">
+                        <div class="cssload-speeding-wheel"></div>
+                    </div>
+                </div>
+
+                <div class="forget__pass">
+                    <p>Don't have an account?<a class="atag" href="#" data-id="login__popup">Log in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- reset password -->
+    <div class="loopex__popup-container loopex__popup-close reset__popup">
+        <div class="loopex__popup">
+            <div class="popup__close">
+                <span>&times;</span>
+            </div>
+            <h4 class="popup__title">Password Reset</h4>
+
+            <form action="javascript:;" class="loopex__popup-form">
+                <div class="loopex__form-group">
+                    <input type="text" class="loopex__input" placeholder="Enter your Loopex Account email">
+                    <div class="input__error">Enter the email address in the correct form</div>
+                </div>
+                
+                <div class="form__btn">
+                    <button type="submit" class="btn btn--green">Log in</button>
+
+                    <div class="cssload-container">
+                        <div class="cssload-speeding-wheel"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

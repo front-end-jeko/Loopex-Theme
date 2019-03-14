@@ -15,6 +15,10 @@
     justify-content: space-around;
 }
 
+.flex-end {
+    justify-content: flex-end !important;
+}
+
 .align-items {
     align-items: center;
 }
@@ -69,4 +73,23 @@
 
 .hover-green:hover {
     color: $loopex-green-hover !important;
+}
+
+.loopex-green {
+    color: $loopex-green;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.section__title {
+    color: $loopex-green;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.wrapper {
+    margin: 100px 150px;
 }

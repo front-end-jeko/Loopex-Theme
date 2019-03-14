@@ -19,9 +19,14 @@ $('.stopPropagation').click(function(e){
     e.stopPropagation();
 });
 
+$(window).on('click', function(){
+    $('.xlp__window').removeClass('active');
+    $('.header__li').removeClass('active');
+});
+
 
 // stop propagation all popup
-document.querySelectorAll('.loopex__popup-container .loopex__popup').forEach(function(popup){
+document.querySelectorAll('.loopex__popup').forEach(function(popup){
     popup.addEventListener('click', function(e){
         e.stopPropagation();
     });
@@ -65,39 +70,6 @@ atags.forEach(function(a){
     });
 });
     
-    
-
-
-
-// slider
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-
-
 
 
 
@@ -128,6 +100,32 @@ $(document).ready(function () {
 
 
 
+
+$(document).ready(function () {
+    $('.about__loopex-left').hide();
+    
+    $('.about__loopex-left:first').show();
+    
+    $('.about__li:first').addClass('active');
+    
+    $('.about__li').click(function () {
+    
+        $('.about__li').removeClass('active');
+    
+        $(this).addClass('active');
+    
+        var currentTab = $(this).attr('href');
+    
+        $('.about__loopex-left').hide();
+    
+        $(currentTab).show();
+    
+        return false;
+    });
+});
+
+
+
 // password eye visibility
 var eyeIcon = document.querySelectorAll('.password__eye');
 eyeIcon.forEach(function(eye){
@@ -148,7 +146,6 @@ eyeIcon.forEach(function(eye){
         }
     }
 });
-
 
 
 
@@ -185,3 +182,62 @@ var x = setInterval(function() {
     document.querySelector(".available__time").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+
+
+
+// dropdown menus show and hide
+var dropdowns = document.querySelectorAll('.dropdown');
+
+dropdowns.forEach(function(drop){
+
+    drop.addEventListener('click', function(e){
+        drop.classList.add('active');
+      
+        if(drop.classList.contains('active') == true) {
+            
+            for(var i = 0; i < dropdowns.length; i++){
+                dropdowns[i].classList.remove('active');
+            }
+            
+            drop.classList.add('active'); 
+        }
+        e.stopPropagation();
+    });
+});
+
+
+
+
+
+
+
+
+// slider
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
