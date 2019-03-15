@@ -3,11 +3,23 @@
     margin-right: 0 !important;
 }
 
+.container  {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .wrapper  {
+        flex-grow: 1;
+    }
+}
+
 #fees {
     .about__right-title {
         margin-bottom: 50px;
     }
 }
+
+
 
 .about__loopex-parent {
     display: flex;
@@ -108,6 +120,7 @@
         .loopex__About__child {
             display: flex;
             flex-wrap: wrap;
+            margin-top: 30px;
 
             .loopex__about__item {
                 width: 50%;
@@ -276,3 +289,5 @@
         }
     }
 }
+
+
