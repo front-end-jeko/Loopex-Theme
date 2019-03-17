@@ -83,6 +83,10 @@
     cursor: pointer;
 }
 
+.no-mr {
+    margin-right: 0 !important;
+}
+
 .section__title {
     color: $loopex-green;
     text-align: center;
@@ -91,6 +95,16 @@
 }
 
 .wrapper {
-    margin: 100px 150px;
+    margin: 100px 150px 100px 150px;
     margin-bottom: 200px;
+}
+
+.account__wrapper {
+    max-width: 1270px;
+    width: 100%;
+    margin: 100px auto 100px auto;
+}
+
+.small-scroll::-webkit-scrollbar {
+    width: 7px;
 }

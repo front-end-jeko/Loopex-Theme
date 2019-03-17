@@ -5,7 +5,7 @@
     border-radius: 3px;
     padding: 0 5px;
     @include flex($justify: center, $align: center);
-    z-index: 10;
+    z-index: 100;
     @include hidden;
     transition: all 0.3s;
 

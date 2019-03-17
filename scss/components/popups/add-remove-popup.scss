@@ -1,0 +1,36 @@
+.blacklist {
+    .loopex__popup {
+        width: 400px;
+    }
+}
+
+.blacklist {
+    
+    .blacklist__title {
+        font-size: 23px;
+        margin-top: 10px;
+        text-align: center;
+        color: $loopex-gray;
+        padding: 0 20px;
+        line-height: 1.3;
+    }
+
+    .blacklist__btns {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+
+        .blacklist__yes {
+            background-color: $loopex-green;
+            width: 100px;
+        }
+
+
+        .blacklist__no {
+            width: 100px;
+            background-color: $loopex-error-color;
+            margin-left: 10px;
+        }
+    }
+}

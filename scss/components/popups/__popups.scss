@@ -81,6 +81,10 @@
                 }
             }
         }
+
+        .popup__p  {
+            color: $loopex-gray;
+        }
     }
 }
 
@@ -108,5 +112,42 @@
         .form__btn {
             margin: 0px 0 40px 0;
         }
+    }
+}
+
+
+.fa__popup {
+
+    .loopex__popup {
+        width: 530px;
+    }
+
+    .popup__p {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        line-height: 1.4;
+    }
+
+    .popup__middle {
+        display: flex;
+        justify-content: center;
+        padding: 20px 30px;
+    }
+
+    .fa__code {
+        color: $loopex-green;
+        font-size: 23px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .generated__code {
+        .popup__p {
+            margin-top: 0;
+        }
+    }
+
+    .fa__popup__bottom {
+        margin: 20px;
     }
 }
