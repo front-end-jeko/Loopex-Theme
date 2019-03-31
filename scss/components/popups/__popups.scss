@@ -86,13 +86,19 @@
             color: $loopex-gray;
         }
     }
+
+    .popup__middle {
+        display: flex;
+        justify-content: center;
+        padding: 20px 30px;
+    }
 }
 
 
 
 
 
-
+// register popup
 .register__popup {
     .loopex__popup-form {
         margin-top: 23px;
@@ -104,20 +110,21 @@
 }
 
 
-
+// reset pass popup
 .reset__popup {
     .loopex__popup-form {
         margin-top: 23px;
         
         .form__btn {
-            margin: 0px 0 40px 0;
+            margin: 0px 0 20px 0;
         }
     }
 }
 
 
-.fa__popup {
 
+// 2fa popup
+.fa__popup {
     .loopex__popup {
         width: 530px;
     }
@@ -126,12 +133,6 @@
         margin-top: 20px;
         margin-bottom: 5px;
         line-height: 1.4;
-    }
-
-    .popup__middle {
-        display: flex;
-        justify-content: center;
-        padding: 20px 30px;
     }
 
     .fa__code {
@@ -149,5 +150,104 @@
 
     .fa__popup__bottom {
         margin: 20px;
+    }
+}
+
+
+
+
+// deposit popup
+.deposit__popup {
+    .deposit__title {
+        margin: 10px 0;
+    }
+
+    .deposit__p {
+        margin-top: 30px;
+        color: $loopex-gray;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .fa__popup__bottom {
+        margin-top: 30px;
+    }
+
+    .fa__popup__bottom {
+        .loopex__form-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .copy__icon {
+            margin-left: 5px;
+            font-size: 32px;
+        }
+
+        input {
+            cursor: auto;
+        }
+
+        .deposit__bottom-p {
+            color: $loopex-gray;
+            font-size: 14px;
+            margin-top: 5px;
+            line-height: 1.1;
+            text-align: justify;
+        }
+    }
+}
+
+
+
+// withdrawal popup
+.withdrawal__popup {
+    
+    .loopex__popup {
+        padding: 32px 50px 0px 50px;
+    }
+
+    .deposit__title {
+        margin-bottom: 30px;
+    }
+    
+    .withdrawal__label {
+        color: $loopex-gray;
+        font-size: 13px;
+    }
+
+    .deposit__bottom-p {
+        color: #cacaca;
+        text-align: justify;
+        margin-bottom: 10px;
+    }
+
+    .loopex__form-group {
+        .loopex__input {
+            margin-top: 8px;
+        }
+    }
+
+    .loopex__form-group:nth-child(2){
+        margin-top: 25px;
+    }
+
+    .form__btn {
+        margin-top: 25px;
+        margin-bottom: 40px;
+
+        .withdrawal__disable__green {
+            margin-top: 8px;
+        }
+
+        .withdrawal__label-right {
+            float: right;
+        }
+
+        &::after {
+            content: '';
+            clear: right;
+            display: block;
+        }
     }
 }

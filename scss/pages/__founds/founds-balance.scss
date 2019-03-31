@@ -1,0 +1,179 @@
+.founds__wrapper {
+    .tabparent__child {
+        padding: 0 3%;
+        margin-bottom: 50px;
+    }
+}
+
+.found__top-1 {
+    margin-top: 30px;
+
+    .found__table-title {
+        width: 13%;
+        text-align: right;
+        
+        &:hover,
+        &:hover .sort__arrow {
+            color: $loopex-green-hover;
+        }
+
+        &:nth-child(1){
+            text-align: left;
+        }
+
+        &:nth-child(2){
+            width: 80px;
+            text-align: center;
+        }
+    }
+}
+
+.found__top {
+    display: flex;
+    align-items: center;
+
+    .search {
+        width: 200px;
+    }
+
+    .convert__btn {
+        margin-left: 80px;
+
+        .btn--transparent {
+            padding: 3px 10px;
+            text-transform: capitalize;
+            
+            &:hover {
+                background: $loopex-green;
+            }
+        }
+    }
+
+    .checkmark__container {
+        margin-top: 20px;
+        
+        .checkmark {
+            border: 1px solid rgb(50, 71, 84);
+        }
+
+        span {
+            color: $loopex-gray;
+            font-size: 13px;
+        }
+    }
+
+    .found__table-title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: $loopex-green;
+        font-size: 14px;
+        margin-right: 10px;
+        line-height: 1.5;
+        cursor: pointer;
+
+        &:nth-child(1){
+            justify-content: flex-start;
+        }
+
+        &:nth-child(2){
+            justify-content: center;
+        }
+
+        .sort {
+            margin-left: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+
+.found__table {
+    .found__top {
+        border-bottom: 1px solid #262C36;
+        margin: 12px 0;
+        height: 38px;
+    }
+
+    .table__item {
+        font-size: 11px;
+        color: #fff;
+        width: 13%;
+        text-align: right;
+        line-height: 1.5;
+        margin-right: 10px;
+
+        &:nth-child(1){
+            text-align: left;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .crypto__logo {
+                margin-right: 5px;
+            }
+        }
+
+        &:nth-child(2){
+            width: 80px;
+            text-align: center;
+        }
+        
+        .crypto__logo {
+            width: 17px;
+            display: inline-block;
+        }
+    }
+
+    .ETH__logo {
+        width: 11px !important;
+    }
+
+    .found__deposit__withdrawal {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 0;
+        width: 9%;
+
+        .icon-Deposit,
+        .icon-Withdrawal {
+            font-size: 20px;
+            cursor: pointer;
+
+            &:hover {
+                color: $loopex-green-hover;
+            }
+        }
+        
+        .icon-Deposit {
+            color: $loopex-green;
+        }
+
+        .icon-Withdrawal {
+            color: $loopex-error-color;
+
+            &:hover {
+                color: red;
+            }
+        }
+
+        .tooltip {
+            left: 50%;
+            top: 30px;
+            padding: 2px 5px;
+            transform: translateX(-50%);
+        }
+
+        .found_icon:hover {
+            .tooltip {
+                @include show;
+            }
+        }
+
+        .found__deposit {
+            margin-right: 10px;
+        }
+    }
+}

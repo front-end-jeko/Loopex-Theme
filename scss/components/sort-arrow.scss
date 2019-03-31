@@ -1,0 +1,18 @@
+.sort__arrow {
+    width: 0;
+    height: 0;
+    border-top: 5px solid;
+    border-right: 5px solid transparent;
+    border-bottom: 0;
+    border-left: 5px solid transparent;
+    color: $loopex-green;
+    cursor: pointer;
+}
+
+.sort__arrow-up {
+    transform: rotate(-180deg);
+}
+
+.sort__arrow-down {
+    margin-top: 3px;
+}

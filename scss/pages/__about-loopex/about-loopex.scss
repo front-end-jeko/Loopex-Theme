@@ -288,6 +288,33 @@
             }
         }
     }
+
+    .sliderpage__ul {
+        .about__li {
+            &:nth-child(1)::after{
+                height: 118px !important;
+            }
+
+            &:nth-child(2)::after{
+                height: 159px !important;
+            }
+        }
+    }
+
+    .slider__a {
+        font-size: 17px !important;
+    }
+
+    .slider__p {
+        padding-top: 20px;
+        padding-right: 50px;
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+            color: #cacaca;
+        }
+    }
 }
 
 

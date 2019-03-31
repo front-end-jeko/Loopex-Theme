@@ -107,7 +107,7 @@
     }
 
     .copyright {
-        @include flex($justify: center, $align: center);
+        text-align: center;
         color: $loopex-gray;
         font-size: 15px;
 

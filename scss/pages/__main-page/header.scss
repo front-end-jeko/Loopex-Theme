@@ -8,6 +8,11 @@
     background: rgba(0, 0, 0, 0.6);
     z-index: 10;
 
+    .header__li {
+        line-height: 1.4;
+        white-space: nowrap;
+    }
+
     .header-left {
         .loopex__logo {
             width: 71px;
@@ -97,7 +102,6 @@
         }
 
         .lang__li {
-            position: relative;
             @include flex($align: center);
             margin-right: 10px;
 
@@ -124,7 +128,7 @@
 
             .lang__content {
                 position: absolute;
-                bottom: -66px;
+                top: 38px;
                 right: 0;
                 padding: 5px;
                 min-width: 100px;

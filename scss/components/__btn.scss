@@ -17,6 +17,14 @@
 }
 
 .btn--transparent {
-    background-color: #17262f;
-    border: 1px solid #324754;
+    background-color: $input-bg;
+    border: 1px solid $input-border;
+    color: $loopex-gray;
+}
+
+.withdrawal__disable__green {
+    background: $input-bg;
+    padding: 9px 7px;
+    cursor: not-allowed;
+    border: 1px solid $input-bg;
 }

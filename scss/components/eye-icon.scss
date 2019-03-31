@@ -1,0 +1,28 @@
+.copy__icon {
+    font-size: 26px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.copy__content {
+    position: absolute;
+    top: 50px;
+    right: -35px;
+    width: 100px;
+    height: 33px;
+    border-radius: 3px;
+    border: 1px solid #324754;
+    background-color: #17262f;
+    font-size: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include hidden;
+    transition: all 0.5s;
+
+    &.active {
+        @include show;
+        top: -50px;
+    }
+}

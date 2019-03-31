@@ -53,29 +53,6 @@
                 }
             }
         }
-
-        .loopex__form-group {
-            width: 200px;
-            margin-bottom: 0;
-
-            .loopex__input {
-                padding: 5px 12px;
-                padding-right: 32px;
-
-                &:focus {
-                    background: $input-bg;
-                }
-            }
-    
-            .icon-search {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                right: 10px;
-                font-size: 9px;
-                cursor: pointer;
-            }
-        }
     }
 
 
@@ -129,5 +106,29 @@
         img {
             width: 50%;
         }
+    }
+}
+
+
+.loopex__form-group.search__cont {
+    width: 200px;
+    margin-bottom: 0;
+
+    .loopex__input {
+        padding: 5px 12px;
+        padding-right: 32px;
+
+        &:focus {
+            background: $input-bg;
+        }
+    }
+
+    .icon-search {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        font-size: 9px;
+        cursor: pointer;
     }
 }
