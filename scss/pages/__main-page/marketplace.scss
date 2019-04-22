@@ -1,10 +1,11 @@
 .marketplace {
     padding: 100px 0;
 
-    .marketplace__head {
+    &__head {
         @include flex($justify: space-between, $align: center);
         position: relative;
-        ul {
+
+        &-ul {
             display: flex;
             align-items: center;
             border: 1px solid $input-border;
@@ -57,13 +58,13 @@
 
 
 
-    .marketplace__sort {
+    &__sort {
         padding-top: 10px;
         padding-bottom: 5px;
         border: 1px solid $input-border;
         border-top-right-radius: 3px;
 
-        ul {
+        &-ul {
             @include flex($align: center);
 
             li {
@@ -93,7 +94,7 @@
         }
     }
 
-    .marketplace__body {
+    &__body {
         border: 1px solid $input-border;
         border-top: 0;
         height: 480px;

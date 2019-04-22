@@ -10,7 +10,7 @@ gulp.task('sass', function () {
   return gulp.src('scss/style.scss')
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(autoprefixer({
-        browsers: ['last 10 versions'],
+        browsers: ['last 20 versions'],
         cascade: false
     }))
     .pipe(gulp.dest('css'));

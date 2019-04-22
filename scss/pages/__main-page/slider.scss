@@ -6,7 +6,7 @@
 }
 
 .loopex__announcements {
-    .loopex__announcements-item {
+    &-item {
         height: 200px;
         background-color: #12191f;
         border: 1px solid #324754;

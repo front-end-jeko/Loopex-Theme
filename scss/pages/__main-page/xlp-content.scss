@@ -1,30 +1,30 @@
 .xlp__window {
     &.active {
-        .header__a {
-            color: $loopex-green !important;
+        .loopex__header-a {
+            color: $loopex-green;
         }
 
         .xlp__content {
             display: block;
         }
     }
+}
 
 
-    .xlp__content {
-        position: absolute;
-        left: -50px;
-        background: rgba(1, 1, 1, 0.76);
-        display: none;
+.xlp__content {
+    position: absolute;
+    left: -50px;
+    background: rgba(1, 1, 1, 0.76);
+    display: none;
 
-        &.active {
-            display: block;
-        }
+    &.active {
+        display: block;
+    }
 
-        .xlp__child {
-            padding: 10px 20px;
-        }
+    &-child {
+        padding: 10px 20px;
 
-        .child__item {
+        &--item {
             width: 450px;
             height: 35px;
             @include flex($justify: space-between, $align: center);

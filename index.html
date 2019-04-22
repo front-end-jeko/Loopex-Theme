@@ -38,28 +38,28 @@
     <!-- banner -->
     <div class="loopex__banner">
         <header class="loopex__header">
-            <div class="header-left flex align-items">
+            <div class="loopex__header-left flex align-items">
                 <div class="loopex__logo">
                     <a href="/"><img src="images/logo_green.png" alt="loopex logo"></a>
                 </div>
 
                 <ul class="header__ul flex align-items">
-                    <li class="header__li"><a class="header__a" href="#">Exchange</a></li>
-                    <li class="header__li relative xlp__window dropdown"><a class="header__a" href="javascript:;">XLP</a>
+                    <li class="loopex__header-li"><a class="loopex__header-a" href="#">Exchange</a></li>
+                    <li class="loopex__header-li relative xlp__window dropdown"><a class="loopex__header-a" href="javascript:;">XLP</a>
                     
                         <div class="xlp__content stopPropagation"> 
-                            <div class="xlp__child">
-                                <div class="child__item">
+                            <div class="xlp__content-child">
+                                <div class="xlp__content-child--item">
                                     <div class="xlp__title">XLP Balance</div>
                                     <div class="xlp__result">50 XLP</div>
                                 </div>
 
-                                <div class="child__item">
+                                <div class="xlp__content-child--item">
                                     <div class="xlp__title">VIP Status</div>
                                     <div class="xlp__result">Disabled</div>
                                 </div>
 
-                                <div class="child__item">
+                                <div class="xlp__content-child--item">
                                     <div class="xlp__title">Use XLP tokens to pay trading fees <br> (50% discount)</div>
                                     <div class="xlp__result">
                                         <label class="switch">
@@ -69,21 +69,21 @@
                                     </div>
                                 </div>
 
-                                <div class="child__item flex-end">
+                                <div class="xlp__content-child--item flex-end">
                                     <a class="hover-green about__xlp" href="#">About XLP</a>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="header__li"><a class="header__a" href="ico.html">Loopex ICO</a></li>
+                    <li class="loopex__header-li"><a class="loopex__header-a" href="ico.html">Loopex ICO</a></li>
                 </ul>
             </div>
 
-            <div class="header-right flex">
+            <div class="loopex__header-right flex">
                 <ul class="header__ul flex align-items">
     
-                    <li class="header__li dropdown"><a class="header__a" href="javascript:;">Orders</a>
-                        <div class="dropdown__li">
+                    <li class="loopex__header-right--li dropdown"><a class="loopex__header-a" href="javascript:;">Orders</a>
+                        <div class="dropdown__li dropdown__close">
                             <ul>
                                 <li><a href="#">Open Orders</a></li>
                                 <li><a href="#">Smart Orders</a></li>
@@ -93,8 +93,8 @@
                         </div>
                     </li>
 
-                    <li class="header__li dropdown"><a class="header__a" href="javascript:;">Funds</a>
-                        <div class="dropdown__li">
+                    <li class="loopex__header-right--li dropdown"><a class="loopex__header-a" href="javascript:;">Funds</a>
+                        <div class="dropdown__li dropdown__close">
                             <ul>
                                 <li><a href="founds.html">Balance</a></li>
                                 <li><a href="founds.html">Deposit History</a></li>
@@ -103,8 +103,8 @@
                         </div>
                     </li>
 
-                    <li class="header__li dropdown"><a class="header__a" href="javascript:;"><span class="icon-account-icon"></span></a>
-                        <div class="dropdown__li">
+                    <li class="loopex__header-right--li dropdown"><a class="loopex__header-a" href="javascript:;"><span class="icon-account-icon"></span></a>
+                        <div class="dropdown__li dropdown__close">
                             <ul>
                                 <li><a href="account.html">Profile</a></li>
                                 <li><a href="account.html">Security</a></li>
@@ -113,22 +113,22 @@
                         </div>
                     </li>
 
-                    <li class="header__li"><a class="header__a open__popup" href="#" data-popup="register">Register</a></li>
-                    <li class="header__li"><a class="header__a open__popup" href="#" data-popup="login">Log in</a></li>
+                    <li class="loopex__header-right--li"><a class="loopex__header-a open__popup" href="#" data-popup="register">Register</a></li>
+                    <li class="loopex__header-right--li"><a class="loopex__header-a open__popup" href="#" data-popup="login">Log in</a></li>
 
-                    <li class="header__li lang__li dropdown"><a class="header__a" href="javascript:;">ENG</a>
-                        <div class="lang__menu"></div>
-                        <ul class="lang__content stopPropagation">
+                    <li class="loopex__header-right--li lang__li dropdown"><a class="loopex__header-a" href="javascript:;">ENG</a>
+                        <ul class="lang__content dropdown__close stopPropagation">
                             <li><a href="#">Русский</a></li>
                             <li><a href="#">Українська</a></li>
                             <li><a href="#">Português</a></li>
-                        </ul>                      
+                        </ul>  
+                        <div class="lang__menu"></div>                    
                     </li>
                 </ul>
             </div>
         </header>
 
-        <div class="banner__content">
+        <div class="loopex__banner-content">
             <h1>Loopex.io</h1>
             <h1>Global Platform for Digital Assets</h1>
             <h1>We Make Trading<span> Smarter</span></h1>
@@ -173,21 +173,21 @@
                 <div class="announcements__title">Upcoming Event</div>
 
                 <div class="available__time">
-                    <div class="timer">
+                    <div class="available__time-timer">
                         <div class="timer__child">
                             <div class="timer__number days"></div>
                             <div class="days__text">Days</div>
                         </div>
                     </div>
     
-                    <div class="timer">
+                    <div class="available__time-timer">
                         <div class="timer__child">
                             <div class="timer__number hours"></div>
                             <div class="days__text">Hours</div>
                         </div>
                     </div>
 
-                    <div class="timer">
+                    <div class="available__time-timer">
                         <div class="timer__child">
                             <div class="timer__number minutes"></div>
                             <div class="days__text">Minutes</div>
@@ -195,7 +195,7 @@
                     </div>
 
 
-                    <div class="timer">
+                    <div class="available__time-timer">
                         <div class="timer__child">
                             <div class="timer__number seconds"></div>
                             <div class="days__text">Seconds</div>
@@ -213,7 +213,7 @@
     <section class="marketplace">
         <div class="loopex__container">
             <div class="marketplace__head">
-                <ul>
+                <ul class="marketplace__head-ul">
                     <li class="marketplace__li" href="#marketplace__1"><span class="icon-star"></span> Favorites</li>
                     <li class="marketplace__li" href="#marketplace__2">BTC</li>
                     <li class="marketplace__li" href="#marketplace__3">ETH</li>
@@ -229,7 +229,7 @@
             </div>
 
             <div class="marketplace__sort">
-                <ul>
+                <ul class="marketplace__sort-ul">
                     <li>
                         <span>Pair</span> 
                         <div class="sort">
@@ -341,8 +341,8 @@
     <!-- footer -->
     <footer class="loopex__footer">
         <div class="loopex__container">
-            <div class="footer__menu">
-                <ul class="footer__menu-ul">
+            <div class="loopex__footer-menu">
+                <ul class="loopex__footer-menu-ul">
                     <li class="footer__menu-li"><a href="aboutloopex.html">about</a></li>
                     <li class="footer__menu-li"><a href="#">Important Information</a></li>
                     <li class="footer__menu-li"><a href="#">contact</a></li>
@@ -350,13 +350,13 @@
                     <li class="footer__menu-li"><a href="privacy.html">Privacy Policy</a></li>
                 </ul>
 
-                <ul class="footer__menu-ul">
+                <ul class="loopex__footer-menu-ul">
                     <li class="footer__menu-li"><a href="#">Loopex ICO</a></li>
                     <li class="footer__menu-li"><a href="#">fees</a></li>
                     <li class="footer__menu-li"><a href="#">White Paper</a></li>
                 </ul>
 
-                <div class="subscribe footer__menu-ul">
+                <div class="subscribe loopex__footer-menu-ul">
                     <div class="social__icons">
                         <ul>
                             <li><span class="icon-twitter1"></span>
@@ -408,10 +408,10 @@
     <!-- login -->
     <div class="loopex__popup-container loopex__popup-close login__popup" data-popup="login">
         <div class="loopex__popup">
-            <div class="popup__close">
+            <div class="loopex__popup-close">
                 <span>&times;</span>
             </div>
-            <h4 class="popup__title">Log In</h4>
+            <h4 class="loopex__popup-title">Log In</h4>
 
             <form action="javascript:;" class="loopex__popup-form">
                 <div class="loopex__form-group">
@@ -446,10 +446,10 @@
     <!-- register -->
     <div class="loopex__popup-container loopex__popup-close register__popup" data-popup="register">
         <div class="loopex__popup">
-            <div class="popup__close">
+            <div class="loopex__popup-close">
                 <span>&times;</span>
             </div>
-            <h4 class="popup__title">Create Your Account</h4>
+            <h4 class="loopex__popup-title">Create Your Account</h4>
 
             <form action="javascript:;" class="loopex__popup-form">
                 <div class="loopex__form-group">
@@ -516,10 +516,10 @@
     <!-- reset password -->
     <div class="loopex__popup-container loopex__popup-close reset__popup">
         <div class="loopex__popup">
-            <div class="popup__close">
+            <div class="loopex__popup-close">
                 <span>&times;</span>
             </div>
-            <h4 class="popup__title">Password Reset</h4>
+            <h4 class="loopex__popup-title">Password Reset</h4>
 
             <form action="javascript:;" class="loopex__popup-form">
                 <div class="loopex__form-group">

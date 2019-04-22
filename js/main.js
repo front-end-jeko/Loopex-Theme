@@ -47,7 +47,7 @@ document.querySelectorAll('.loopex__popup').forEach(function(popup){
 
 
 // close popups by x icon
-var closePopup = document.querySelectorAll('.popup__close');
+var closePopup = document.querySelectorAll('.loopex__popup-close');
 closePopup.forEach(function(close){
     close.addEventListener('click', function(){
         this.parentElement.parentElement.classList.remove('active');
@@ -61,6 +61,20 @@ document.addEventListener('click', function(e){
         if(pop.classList.contains('active')){
             pop.classList.remove('active');
         } 
+    });
+});
+
+
+
+// close dropdown contents by click document
+document.addEventListener('click', function(e){
+    document.querySelectorAll('.dropdown__close').forEach(function(dropdown){
+
+        var previous = dropdown.previousElementSibling.parentElement;
+
+        if(previous.classList.contains('active') === true){
+            previous.classList.remove('active');         
+        }
     });
 });
 

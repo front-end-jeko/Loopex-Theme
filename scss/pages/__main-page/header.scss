@@ -8,151 +8,141 @@
     background: rgba(0, 0, 0, 0.6);
     z-index: 10;
 
-    .header__li {
+    &-li {
         line-height: 1.4;
         white-space: nowrap;
     }
-
-    .header-left {
+    
+    &-left {
         .loopex__logo {
             width: 71px;
             padding-left: 11px;
             padding-right: 10px;
         }
+    }
 
-        .header__li {
-            margin-left: 10px;
+    &-li {
+        margin-left: 10px;      
+    }
 
-            .header__a {
-                font-size: 17px;
-                color: #fff;
-                padding: 8px;
+    &-a {
+        font-size: 17px;
+        color: #fff;
+        padding: 8px;
 
-                &:hover {
-                    color: $loopex-green;
-                }
-            }
+        &:hover {
+            color: $loopex-green;
         }
     }
 
-    .header-right {
+    &-right {
         padding-right: 50px;
-        .header__li {
+
+        &--li {
             position: relative;
             margin-right: 15px;
+            white-space: nowrap;
+        }
 
-            .header__a {
-                font-size: 17px;
-                color: #fff;
-                padding: 8px;
+        .dropdown__li {
+            position: absolute;
+            right: -9px;
+            top: 29px;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            padding-left: 25px;
+            padding-right: 0;
+            line-height: 1.5;
+            background: rgba(5,9,11,0.83);
+            display: none;
 
-                &:hover {
+            ul {
+                padding-right: 17px;
+
+                li:hover a {
                     color: $loopex-green;
                 }
-            }
 
-            .dropdown__li {
-                position: absolute;
-                right: -9px;
-                top: 29px;
-                padding-top: 5px;
-                padding-bottom: 10px;
-                padding-left: 25px;
-                padding-right: 0;
-                line-height: 1.5;
-                background: rgba(5,9,11,0.83);
-                display: none;
-
-                ul {
-                    padding-right: 17px;
-
-                    li:hover a {
-                        color: $loopex-green;
-                    }
-
-                    a {
-                        color: #fff;
-                        font-size: 17px;
-                        text-align: right;
-                        white-space: nowrap;
-                        display: block;
-                    }
+                a {
+                    color: #fff;
+                    font-size: 17px;
+                    text-align: right;
+                    white-space: nowrap;
+                    display: block;
                 }
             }
+        }
 
-            .icon-account-icon {
-                font-size: 30px;
-            }
-
-            &.active {
-                .icon-account-icon {
-                    color: #3a8980;
-                }
-            }
+        .icon-account-icon {
+            font-size: 30px;
         }
 
         .dropdown.active {
-            .header__a {
-                color: $loopex-green;
-            }
-
-            .dropdown__li {
-                display: block;
+            .icon-account-icon {
+                color: #3a8980;
             }
         }
+    }
 
-        .lang__li {
-            @include flex($align: center);
-            margin-right: 10px;
+    .dropdown.active {
+        .loopex__header-a {
+            color: $loopex-green;
+        }
 
-            &.active .lang__content {
-                display: block;
-            }
-            
+        .dropdown__li {
+            display: block;
+        }
+    }
 
-            .header__a {
-                color: $loopex-green;
-            }
+    .lang__li {
+        @include flex($align: center);
+        margin-right: 10px;
 
-            .lang__menu {
-                width: 0;
-                height: 0;
-                border-top: 6px solid;
-                border-right: 6px solid transparent;
-                border-bottom: 0;
-                border-left: 6px solid transparent;
-                color: $loopex-green;
-                cursor: pointer;
+        &.active .lang__content {
+            display: block;
+        }
+        
 
-            }
+        .loopex__header-a {
+            color: $loopex-green;
+        }
 
-            .lang__content {
-                position: absolute;
-                top: 38px;
-                right: 0;
-                padding: 5px;
-                min-width: 100px;
-                background-color: rgba(1,1,1,0.76);
-                display: none;
+        .lang__menu {
+            width: 0;
+            height: 0;
+            border-top: 6px solid;
+            border-right: 6px solid transparent;
+            border-bottom: 0;
+            border-left: 6px solid transparent;
+            color: $loopex-green;
+            cursor: pointer;
+
+        }
+
+        .lang__content {
+            position: absolute;
+            top: 38px;
+            right: 0;
+            padding: 5px;
+            min-width: 100px;
+            background-color: rgba(1,1,1,0.76);
+            display: none;
 
 
-                li {
-                    a {
-                        width: 100%;
-                        display: block;
-                        color: #fff;
-                        padding: 3px 15px;
-                        text-align: right;
-                        font-size: 17px;
+            li {
+                a {
+                    width: 100%;
+                    display: block;
+                    color: #fff;
+                    padding: 3px 15px;
+                    text-align: right;
+                    font-size: 17px;
 
-                        &:hover {
-                            color: $loopex-green;
-                        }
+                    &:hover {
+                        color: $loopex-green;
                     }
                 }
             }
-        } 
-    }
+        }
+    } 
 }
-
-
