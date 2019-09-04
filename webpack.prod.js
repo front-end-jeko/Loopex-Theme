@@ -8,6 +8,8 @@ const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require('copy-webpack-plugin');
 
+
+
 module.exports = merge(common, {
     mode: "production",
     output: {
@@ -30,13 +32,17 @@ module.exports = merge(common, {
         ]
       },
 
+
+
     plugins: [ 
         new MiniCssExtractPlugin({ filename: "[name].[contentHash].css" }), 
         new CleanWebpackPlugin(),
-        new CopyPlugin([
-          { from: 'src/assets/fonts', to: 'assets/fonts' },
-        ]),
+        // new CopyPlugin([
+        //     { from: 'src/fonts', to: 'fonts' },
+        //   ]),
     ],
+
+
 
 
     module: {
@@ -48,21 +54,12 @@ module.exports = merge(common, {
                     "css-loader", //2. Turns css into commonjs
                     "sass-loader" //1. Turns sass into css
                 ]
-            }
-          
+            },
 
-            // {
-            //   test: /\.(woff|woff2|eot|ttf|otf)$/,
-            //   use: [
-            //     {
-            //       loader: 'file-loader',
-            //       options: {
-            //         name: '[name].[ext]',
-            //         outputPath: 'fonts/'
-            //       }
-            //     }
-            //   ]
-            // },
+            {
+             test: /\.css$/i,
+             use: ['style-loader', 'css-loader'],
+            },
         ]
     }
 });

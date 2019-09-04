@@ -1,9 +1,13 @@
-@font-face {
-    font-family: 'ubuntu_allfont_ru';
-    src: url('/src/assets/fonts/ubuntu/ubuntu_allfont_ru.eot');
-    src: url('/src/assets/fonts/ubuntu/ubuntu_allfont_ru.eot') format("embedded-opentype"), url('/src/assets/fonts/ubuntu/ubuntu_allfont_ru.woff2') format("woff2"), url('/src/assets/fonts/ubuntu/ubuntu_allfont_ru.woff') format("woff"), url('/src/assets/fonts/ubuntu/ubuntu_allfont_ru.ttf') format("truetype"), url('/src/assets/fonts/ubuntu/ubuntu_allfont_ru.svg#ubuntu_allfont_ru') format("svg");
-    font-style: normal;
-  }
+// @font-face {
+//     font-family: 'ubuntu_allfont_ru';
+//     src: url('/fonts/ubuntu/ubuntu_allfont_ru.eot');
+//     src: url('/fonts/ubuntu/ubuntu_allfont_ru.eot') format("embedded-opentype"), 
+//          url('/fonts/ubuntu/ubuntu_allfont_ru.woff2') format("woff2"), 
+//          url('/fonts/ubuntu/ubuntu_allfont_ru.woff') format("woff"), 
+//          url('/fonts/ubuntu/ubuntu_allfont_ru.ttf') format("truetype"), 
+//          url('/fonts/ubuntu/ubuntu_allfont_ru.svg#ubuntu_allfont_ru') format("svg");
+//     font-style: normal;
+//   }
 
 
 
@@ -15,118 +19,118 @@
 
 
 
-// icomoon
-@font-face {
-  font-family: 'icomoon';
-  src:  url('/src/assets/fonts/icomoon/icomoon.eot?mulcr0');
-  src:  url('/src/assets/fonts/icomoon/icomoon.eot?mulcr0#iefix') format('embedded-opentype'),
-    url('/src/assets/fonts/icomoon/icomoon.ttf?mulcr0') format('truetype'),
-    url('/src/assets/fonts/icomoon/icomoon.woff?mulcr0') format('woff'),
-    url('/src/assets/fonts/icomoon/icomoon.svg?mulcr0#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+// // icomoon
+// @font-face {
+//   font-family: 'icomoon';
+//   src:  url('/src/assets/fonts/icomoon/icomoon.eot?mulcr0');
+//   src:  url('/src/assets/fonts/icomoon/icomoon.eot?mulcr0#iefix') format('embedded-opentype'),
+//     url('/src/assets/fonts/icomoon/icomoon.ttf?mulcr0') format('truetype'),
+//     url('/src/assets/fonts/icomoon/icomoon.woff?mulcr0') format('woff'),
+//     url('/src/assets/fonts/icomoon/icomoon.svg?mulcr0#icomoon') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+// [class^="icon-"], [class*=" icon-"] {
+//   /* use !important to prevent issues with browser extensions that change fonts */
+//   font-family: 'icomoon' !important;
+//   speak: none;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-variant: normal;
+//   text-transform: none;
+//   line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+//   /* Better Font Rendering =========== */
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
 
-.icon-facebook:before {
-  content: "\e900";
-}
-.icon-instagram1:before {
-  content: "\e901";
-}
-.icon-linkedin:before {
-  content: "\e902";
-}
-.icon-telegram1:before {
-  content: "\e903";
-}
-.icon-twitter1:before {
-  content: "\e904";
-}
-.icon-calendar:before {
-  content: "\e905";
-  color: #fff;
-}
-.icon-copy-icon:before {
-  content: "\e906";
-  color: #324754;
-}
-.icon-delete:before {
-  content: "\e907";
-  color: #fff;
-}
-.icon-Deposit:before {
-  content: "\e908";
-}
-.icon-Withdrawal:before {
-  content: "\e909";
-}
-.icon-envelope:before {
-  content: "\e90a";
-  color: #3a8980;
-}
-.icon-exclamation-circle:before {
-  content: "\e90b";
-}
-.icon-eye:before {
-  content: "\e90c";
-}
-.icon-eye-X:before {
-  content: "\e90d";
-  color: #3a8980;
-}
-.icon-open-tab:before {
-  content: "\e90e";
-}
-.icon-pencil:before {
-  content: "\e90f";
-}
-.icon-percentage2:before {
-  content: "\e910";
-  color: #fff;
-}
-.icon-search:before {
-  content: "\e911";
-  color: #cacaca;
-}
-.icon-sort-down:before {
-  content: "\e912";
-}
-.icon-sort-up:before {
-  content: "\e913";
-}
-.icon-star-regular:before {
-  content: "\e914";
-}
-.icon-star-solid:before {
-  content: "\e915";
-}
-.icon-times-circle:before {
-  content: "\e916";
-}
-.icon-times-solid:before {
-  content: "\e917";
-}
+// .icon-facebook:before {
+//   content: "\e900";
+// }
+// .icon-instagram1:before {
+//   content: "\e901";
+// }
+// .icon-linkedin:before {
+//   content: "\e902";
+// }
+// .icon-telegram1:before {
+//   content: "\e903";
+// }
+// .icon-twitter1:before {
+//   content: "\e904";
+// }
+// .icon-calendar:before {
+//   content: "\e905";
+//   color: #fff;
+// }
+// .icon-copy-icon:before {
+//   content: "\e906";
+//   color: #324754;
+// }
+// .icon-delete:before {
+//   content: "\e907";
+//   color: #fff;
+// }
+// .icon-Deposit:before {
+//   content: "\e908";
+// }
+// .icon-Withdrawal:before {
+//   content: "\e909";
+// }
+// .icon-envelope:before {
+//   content: "\e90a";
+//   color: #3a8980;
+// }
+// .icon-exclamation-circle:before {
+//   content: "\e90b";
+// }
+// .icon-eye:before {
+//   content: "\e90c";
+// }
+// .icon-eye-X:before {
+//   content: "\e90d";
+//   color: #3a8980;
+// }
+// .icon-open-tab:before {
+//   content: "\e90e";
+// }
+// .icon-pencil:before {
+//   content: "\e90f";
+// }
+// .icon-percentage2:before {
+//   content: "\e910";
+//   color: #fff;
+// }
+// .icon-search:before {
+//   content: "\e911";
+//   color: #cacaca;
+// }
+// .icon-sort-down:before {
+//   content: "\e912";
+// }
+// .icon-sort-up:before {
+//   content: "\e913";
+// }
+// .icon-star-regular:before {
+//   content: "\e914";
+// }
+// .icon-star-solid:before {
+//   content: "\e915";
+// }
+// .icon-times-circle:before {
+//   content: "\e916";
+// }
+// .icon-times-solid:before {
+//   content: "\e917";
+// }
 
-.icon-star:before {
-  content: "\e918";
-  color: #fff;
-}
+// .icon-star:before {
+//   content: "\e918";
+//   color: #fff;
+// }
 
-.icon-account-icon:before {
-  content: "\e919";
-}
+// .icon-account-icon:before {
+//   content: "\e919";
+// }

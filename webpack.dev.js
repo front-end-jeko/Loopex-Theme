@@ -2,6 +2,9 @@ const path = require("path");
 const common = require("./webpack.common");
 const merge = require("webpack-merge");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
 
 module.exports = merge(common, {
     mode: "development",
@@ -11,7 +14,9 @@ module.exports = merge(common, {
     },
 
     plugins: [
-        new HtmlWebpackPlugin({template: './src/index.html'})
+        new HtmlWebpackPlugin({template: 'src/index.html'}),
+        new MiniCssExtractPlugin({ filename: "[name].[contentHash].css" }), 
+        new CleanWebpackPlugin()
     ],
 
     module: {
@@ -23,7 +28,14 @@ module.exports = merge(common, {
                     "css-loader", //2. Turns css into commonjs
                     "sass-loader" //1. Turns sass into css
                 ]
-            }
+            },
+
+            
+            {
+             test: /\.css$/i,
+             use: ['style-loader', 'css-loader'],
+            },
+           
         ]
     }
 });

@@ -1,4 +1,5 @@
 import './scss/style.scss';
+import './fonts/fonts.css'
 import $ from 'jquery';
 
 

@@ -24,10 +24,21 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[name].[hash].[ext]",
-              outputPath: "assets/images"
+              outputPath: "./images"
             }
           }
-        }
+        },
+
+
+        {
+          test: /\.(woff|woff2|eot|ttf|svg)$/,
+          use: [{
+            loader: 'file-loader',
+            options: {
+              outputPath: 'fonts'
+            }
+          }]
+      },
       ],
     },   
 }
