@@ -1,3 +1,7 @@
+import './scss/style.scss';
+import $ from 'jquery';
+
+
 // open all popup by one code
 var openPopup = document.querySelectorAll('.open__popup');
 openPopup.forEach(function(click){
@@ -284,4 +288,14 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+$('#nextsliderbtn').click(() => plusSlides(1))
+$('#prevsliderbtn').click(() => plusSlides(-1))
+
+let dots = $('.sliderDots');
+
+$(dots[0]).click(() => currentSlide(1))
+$(dots[1]).click(() => currentSlide(2))
+$(dots[2]).click(() => currentSlide(3))
+$(dots[3]).click(() => currentSlide(4))
 
