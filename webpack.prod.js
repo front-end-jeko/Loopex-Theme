@@ -7,7 +7,6 @@ const TerserPlugin = require("terser-webpack-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 // const CopyPlugin = require('copy-webpack-plugin');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 
 
@@ -37,8 +36,7 @@ module.exports = merge(common, {
 
     plugins: [ 
         new MiniCssExtractPlugin({ filename: "[name].[contentHash].css" }), 
-        new CleanWebpackPlugin(),
-        new FaviconsWebpackPlugin('/src/images/favicon.ico') // svg works too!
+        new CleanWebpackPlugin()
     ],
 
 

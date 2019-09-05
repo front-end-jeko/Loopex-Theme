@@ -5,9 +5,9 @@ import $ from 'jquery';
 
 // open all popup by one code
 var openPopup = document.querySelectorAll('.open__popup');
-openPopup.forEach(function(click){
-    click.addEventListener('click', function(e){
-        document.querySelectorAll('.loopex__popup-close').forEach(function(mypopup){
+openPopup.forEach(click => {
+    click.addEventListener('click', e => {
+        document.querySelectorAll('.loopex__popup-close').forEach(mypopup => {
             if(click.getAttribute('data-popup') ===  mypopup.getAttribute('data-popup')){
                 mypopup.classList.toggle('active');
             }
@@ -22,8 +22,8 @@ openPopup.forEach(function(click){
 
 // close popup by esc 
 var popups = document.querySelectorAll('.loopex__popup-close');
-popups.forEach(function(popup){
-    document.addEventListener('keydown', function(e){
+popups.forEach(popup => {
+    document.addEventListener('keydown', e => {
         if (e.keyCode == 27 || e.which == 27) {
             popup.classList.remove('active');
         }
@@ -33,19 +33,19 @@ popups.forEach(function(popup){
 
 
 // stoppropagation stop
-$('.stopPropagation').click(function(e){
+$('.stopPropagation').click(e => {
     e.stopPropagation();
 });
 
-$(window).on('click', function(){
+$(window).on('click', () => {
     $('.xlp__window').removeClass('active');
     $('.header__li').removeClass('active');
 });
 
 
 // stop propagation all popup
-document.querySelectorAll('.loopex__popup').forEach(function(popup){
-    popup.addEventListener('click', function(e){
+document.querySelectorAll('.loopex__popup').forEach(popup => {
+    popup.addEventListener('click', e => {
         e.stopPropagation();
     });
 });
@@ -53,16 +53,16 @@ document.querySelectorAll('.loopex__popup').forEach(function(popup){
 
 // close popups by x icon
 var closePopup = document.querySelectorAll('.loopex__popup-close');
-closePopup.forEach(function(close){
-    close.addEventListener('click', function(){
+closePopup.forEach(close => {
+    close.addEventListener('click', function() {
         this.parentElement.parentElement.classList.remove('active');
     });
 });
 
 
 // close popups by document click
-document.addEventListener('click', function(e){
-    document.querySelectorAll('.loopex__popup-close').forEach(function(pop){
+document.addEventListener('click', e => {
+    document.querySelectorAll('.loopex__popup-close').forEach(pop => {
         if(pop.classList.contains('active')){
             pop.classList.remove('active');
         } 
@@ -72,8 +72,8 @@ document.addEventListener('click', function(e){
 
 
 // close dropdown contents by click document
-document.addEventListener('click', function(e){
-    document.querySelectorAll('.dropdown__close').forEach(function(dropdown){
+document.addEventListener('click', e =>{
+    document.querySelectorAll('.dropdown__close').forEach(dropdown => {
 
         var previous = dropdown.previousElementSibling.parentElement;
 
@@ -89,11 +89,11 @@ document.addEventListener('click', function(e){
 
 // popups
 var atags = document.querySelectorAll('.atag');
-atags.forEach(function(a){
+atags.forEach(a => {
     var dataId = a.getAttribute('data-id');
 
-    a.addEventListener('click', function(){
-        document.querySelectorAll('.loopex__popup-container').forEach(function(pop){
+    a.addEventListener('click', () => {
+        document.querySelectorAll('.loopex__popup-container').forEach(pop => {
             if(pop.classList.contains(dataId) === true){
                 var newPopup = pop.classList.add('active');
             } else if (pop.classList.contains('active') === true){
@@ -108,7 +108,7 @@ atags.forEach(function(a){
 
 
 // tabs
-$(document).ready(function () {
+$(function () {
     $('.marketplace__body').hide();
     
     $('.marketplace__body:first').show();
@@ -134,7 +134,7 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function () {
+$(function () {
     $('.about__loopex-left, .tabparent__child').hide();
     
     $('.about__loopex-left:first, .tabparent__child:first').show();
@@ -161,7 +161,7 @@ $(document).ready(function () {
 
 // password eye visibility
 var eyeIcon = document.querySelectorAll('.password__eye');
-eyeIcon.forEach(function(eye){
+eyeIcon.forEach(eye => {
     eye.addEventListener('click', showpass);
 
     function showpass(){
@@ -169,12 +169,10 @@ eyeIcon.forEach(function(eye){
 
         if(eye.classList.contains('show') == true){
             var input = eye.previousElementSibling;
-
             input.type = 'text';
         
         } else {
             var input = eye.previousElementSibling;
-
             input.type = 'password';
         }
     }
@@ -186,10 +184,9 @@ eyeIcon.forEach(function(eye){
 
 // dropdown menus show and hide
 var dropdowns = document.querySelectorAll('.dropdown');
+dropdowns.forEach(drop =>{
 
-dropdowns.forEach(function(drop){
-
-    drop.addEventListener('click', function(e){
+    drop.addEventListener('click', e => {
         drop.classList.toggle('active');
       
         if(drop.classList.contains('active') == true) {
@@ -212,10 +209,10 @@ dropdowns.forEach(function(drop){
 
 // timer
 // Set the date we're counting down to
-var countDownDate = new Date("oct 5, 2019 15:37:25").getTime();
+var countDownDate = new Date("oct 5, 2021 15:37:25").getTime();
 
 // Update the count down every 1 second
-var x = setInterval(function() {
+var x = setInterval(() => {
 
   // Get todays date and time
   var now = new Date().getTime();
@@ -290,4 +287,5 @@ $(dots[0]).click(() => currentSlide(1))
 $(dots[1]).click(() => currentSlide(2))
 $(dots[2]).click(() => currentSlide(3))
 $(dots[3]).click(() => currentSlide(4))
+
 

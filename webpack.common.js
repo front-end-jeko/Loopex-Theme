@@ -86,6 +86,9 @@ module.exports = {
           inject: true,
           chunks: ['main', 'vendor'],
           filename: 'aboutloopex.html'
-      })
+      }), 
+      new HtmlWebpackPlugin({
+        favicon: "./src/images/favicon.ico"
+    })
     ]
 }
