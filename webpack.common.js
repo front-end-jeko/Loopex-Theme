@@ -3,8 +3,8 @@ const path = require("path");
 
 module.exports = {
     entry: {
-      vendor: "./src/vendor.js",
-      main: "./src/index.js"
+      vendor: "./src/libraries/vendor.js",
+      main: "./src/js/index.js"
     },
     output: {
         filename: "main.[contentHash].js",
@@ -16,6 +16,21 @@ module.exports = {
         {
           test: /\.html$/,
           use: ["html-loader"]
+        },
+
+
+        {
+          test: /\.html$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[ext]'
+              }
+            }
+          ],
+
+          exclude: path.resolve(__dirname, 'src/index.html')
         },
 
         {
@@ -35,7 +50,7 @@ module.exports = {
           use: [{
             loader: 'file-loader',
             options: {
-              outputPath: 'fonts'
+              outputPath: './fonts'
             }
           }]
       },

@@ -14,11 +14,13 @@ module.exports = merge(common, {
     },
 
     plugins: [
-        new HtmlWebpackPlugin({template: 'src/index.html'}),
         new MiniCssExtractPlugin({ filename: "[name].[contentHash].css" }), 
+        new HtmlWebpackPlugin({filename: 'index.html', template: 'src/index.html'}),
         new CleanWebpackPlugin()
     ],
 
+
+    
     module: {
         rules: [
             {
