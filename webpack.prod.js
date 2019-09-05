@@ -22,12 +22,12 @@ module.exports = merge(common, {
           new OptimizeCssAssetsPlugin(),
           new TerserPlugin(),
           new HtmlWebpackPlugin({
-            template: "./src/index.html",
-            minify: {
-              removeAttributeQuotes: true,
-              collapseWhitespace: true,
-              removeComments: true
-            }
+            template: "./src/index.html"
+            // minify: {
+            //   removeAttributeQuotes: true,
+            //   collapseWhitespace: true,
+            //   removeComments: true
+            // }
           })
         ]
       },
