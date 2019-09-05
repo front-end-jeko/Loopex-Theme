@@ -1,6 +1,5 @@
 import '../fonts/fonts.scss';
 import '../scss/style.scss';
-import '../terms.html';
 import $ from 'jquery';
 
 
