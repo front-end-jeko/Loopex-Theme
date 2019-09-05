@@ -1,5 +1,5 @@
 const path = require("path");
-
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     entry: {
@@ -18,20 +18,6 @@ module.exports = {
           use: ["html-loader"]
         },
 
-
-        {
-          test: /\.html$/,
-          use: [
-            {
-              loader: 'file-loader',
-              options: {
-                name: '[name].[ext]'
-              }
-            }
-          ],
-
-          exclude: path.resolve(__dirname, 'src/index.html')
-        },
 
         {
           test: /\.(svg|png|jpg|gif)$/,
@@ -53,7 +39,53 @@ module.exports = {
               outputPath: './fonts'
             }
           }]
-      },
+        },
       ],
-    },   
+    }, 
+    
+    
+    plugins: [
+      new HtmlWebpackPlugin({
+          template: './src/terms.html',
+          inject: true,
+          chunks: ['main', 'vendor'],
+          filename: 'terms.html'
+      }),
+      new HtmlWebpackPlugin({
+          template: './src/account.html',
+          inject: true,
+          chunks: ['main', 'vendor'],
+          filename: 'account.html'
+      }),
+      new HtmlWebpackPlugin({
+          template: './src/sliderpage.html',
+          inject: true,
+          chunks: ['main', 'vendor'],
+          filename: 'sliderpage.html'
+      }),
+      new HtmlWebpackPlugin({
+          template: './src/Privacy.html',
+          inject: true,
+          chunks: ['main', 'vendor'],
+          filename: 'Privacy.html'
+      }),
+      new HtmlWebpackPlugin({
+          template: './src/ico.html',
+          inject: true,
+          chunks: ['main', 'vendor'],
+          filename: 'ico.html'
+      }),
+      new HtmlWebpackPlugin({
+          template: './src/founds.html',
+          inject: true,
+          chunks: ['main', 'vendor'],
+          filename: 'founds.html'
+      }),
+      new HtmlWebpackPlugin({
+          template: './src/aboutloopex.html',
+          inject: true,
+          chunks: ['main', 'vendor'],
+          filename: 'aboutloopex.html'
+      })
+    ]
 }

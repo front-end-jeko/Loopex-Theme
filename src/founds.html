@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loopex Theme</title>
+
+    <!-- google -->
+    <meta name="description" content="Loopex is the innovative platform, providing to customers advanced tools  for selling/buying cryptocurrencies, which can help to make trading on the exchange as simple and automated as possible.">
+    <meta name="keywords" content="bitcoin, cryptocurrency, exchange, ethereum, ripple, btc, trade, loopex ">
+
+</head>
+<body>
+
+    <!-- header -->
+    <header class="loopex__header">
+        <div class="loopex__header-left flex align-items">
+            <div class="loopex__logo">
+                <a href="/"><img src="./images/logo_green.png" alt="loopex logo"></a>
+            </div>
+
+            <ul class="header__ul flex align-items">
+                <li class="loopex__header-li"><a class="loopex__header-a" href="#">Exchange</a></li>
+                <li class="loopex__header-li relative xlp__window dropdown"><a class="loopex__header-a" href="javascript:;">XLP</a>
+                
+                    <div class="xlp__content stopPropagation"> 
+                        <div class="xlp__content-child">
+                            <div class="xlp__content-child--item">
+                                <div class="xlp__title">XLP Balance</div>
+                                <div class="xlp__result">50 XLP</div>
+                            </div>
+
+                            <div class="xlp__content-child--item">
+                                <div class="xlp__title">VIP Status</div>
+                                <div class="xlp__result">Disabled</div>
+                            </div>
+
+                            <div class="xlp__content-child--item">
+                                <div class="xlp__title">Use XLP tokens to pay trading fees <br> (50% discount)</div>
+                                <div class="xlp__result">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="xlp__content-child--item flex-end">
+                                <a class="hover-green about__xlp" href="#">About XLP</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="loopex__header-li"><a class="loopex__header-a" href="ico.html">Loopex ICO</a></li>
+            </ul>
+        </div>
+
+        <div class="loopex__header-right flex">
+            <ul class="header__ul flex align-items">
+
+                <li class="loopex__header-right--li dropdown"><a class="loopex__header-a" href="javascript:;">Orders</a>
+                    <div class="dropdown__li dropdown__close">
+                        <ul>
+                            <li><a href="#">Open Orders</a></li>
+                            <li><a href="#">Smart Orders</a></li>
+                            <li><a href="#">Order History</a></li>
+                            <li><a href="#">Trade History</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="loopex__header-right--li dropdown"><a class="loopex__header-a" href="javascript:;">Funds</a>
+                    <div class="dropdown__li dropdown__close">
+                        <ul>
+                            <li><a href="founds.html">Balance</a></li>
+                            <li><a href="founds.html">Deposit History</a></li>
+                            <li><a href="founds.html">Withdrawal History</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="loopex__header-right--li dropdown"><a class="loopex__header-a" href="javascript:;"><span class="icon-account-icon"></span></a>
+                    <div class="dropdown__li dropdown__close">
+                        <ul>
+                            <li><a href="account.html">Profile</a></li>
+                            <li><a href="account.html">Security</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="loopex__header-right--li"><a class="loopex__header-a open__popup" href="#" data-popup="register">Register</a></li>
+                <li class="loopex__header-right--li"><a class="loopex__header-a open__popup" href="#" data-popup="login">Log in</a></li>
+
+                <li class="loopex__header-right--li lang__li dropdown"><a class="loopex__header-a" href="javascript:;">ENG</a>
+                    <ul class="lang__content dropdown__close stopPropagation">
+                        <li><a href="#">Русский</a></li>
+                        <li><a href="#">Українська</a></li>
+                        <li><a href="#">Português</a></li>
+                    </ul>  
+                    <div class="lang__menu"></div>                    
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+
+
+    <div class="container">
+        <div class="wrapper founds__wrapper">
+            <div class="founds__account">
+
+                <div class="loopex__tabcontent">
+                    <div class="tablink__parent">
+                        <a class="loopex__tablink tablink__child active" href="#balance">Balance</a>
+                        <a class="loopex__tablink tablink__child" href="#deposit">Deposit History</a>
+                        <a class="loopex__tablink tablink__child" href="#withdrawal">Withdrawal History</a>
+                    </div>
+                
+                    <div class="tabparent">
+                        <div class="tabparent__child" id="balance">
+                            <div class="found__top">                           
+                                <div class="search">
+                                    <div class="loopex__form-group search__cont">
+                                        <input type="text" class="search__input loopex__input">
+                                        <span class="icon-search"></span>
+                                    </div>
+                                </div>
+
+                                <div class="convert__btn">
+                                    <button class="btn btn--transparent">Convert to XLP</button>
+                                </div>
+                            </div>
+
+                            <div class="found__top">                           
+                                <label class="checkmark__container">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span>Hide small balances</span>
+                                </label>
+                            </div>
+
+                            <div class="found__top found__top-1">
+                                <!-- sort -->
+                                <div class="found__table-title">
+                                    Currency Name 
+                                    <div class="sort">
+                                        <span class="sort__arrow sort__arrow-up"></span>
+                                        <span class="sort__arrow sort__arrow-down"></span>
+                                    </div>
+                                </div>
+
+                                <div class="found__table-title">
+                                    Symbol  
+                                    <div class="sort">
+                                        <span class="sort__arrow sort__arrow-up"></span>
+                                        <span class="sort__arrow sort__arrow-down"></span>
+                                    </div>
+                                </div>
+
+                                <div class="found__table-title">
+                                    Total Balance  
+                                    <div class="sort">
+                                        <span class="sort__arrow sort__arrow-up"></span>
+                                        <span class="sort__arrow sort__arrow-down"></span>
+                                    </div>
+                                </div>
+
+                                <div class="found__table-title">
+                                    Available Balance 
+                                    <div class="sort">
+                                        <span class="sort__arrow sort__arrow-up"></span>
+                                        <span class="sort__arrow sort__arrow-down"></span>
+                                    </div>
+                                </div>
+
+                                <div class="found__table-title">
+                                    In Order 
+                                    <div class="sort">
+                                        <span class="sort__arrow sort__arrow-up"></span>
+                                        <span class="sort__arrow sort__arrow-down"></span>
+                                    </div>
+                                </div>
+
+                                <div class="found__table-title">
+                                    BTC Value 
+                                    <div class="sort">
+                                        <span class="sort__arrow sort__arrow-up"></span>
+                                        <span class="sort__arrow sort__arrow-down"></span>
+                                    </div>
+                                </div>
+
+                                <div class="found__table-title">
+                                    USD Value 
+                                    <div class="sort">
+                                        <span class="sort__arrow sort__arrow-up"></span>
+                                        <span class="sort__arrow sort__arrow-down"></span>
+                                    </div>
+                                </div>
+                                <!-- sort end -->
+                            </div>
+
+                            <div class="found__table">
+                                <div class="found__top">
+                                    <div class="table__item">
+                                        <img class="crypto__logo" src="./images/cryptologoes/loopex-logo.png" alt="loopex logo">
+                                        <span>Loopex Token</span>
+                                    </div>
+
+                                    <div class="table__item">
+                                        <span>XLP</span>
+                                    </div>
+
+                                    <div class="table__item">
+                                        <span>50</span>
+                                    </div>
+
+                                    <div class="table__item">
+                                        <span>50</span>
+                                    </div>
+
+                                    <div class="table__item">
+                                        <span>0</span>
+                                    </div>
+
+                                    <div class="table__item">
+                                        <span>0</span>
+                                    </div>
+
+                                    <div class="table__item">
+                                        <span>0.33</span>
+                                    </div>
+
+                                    <div class="table__item found__deposit__withdrawal">
+                                        <div class="found_icon found__deposit relative open__popup" data-popup="deposit">
+                                            <span class="icon-Deposit"></span>
+
+                                            <div class="tooltip">
+                                                <span>Deposit</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="found_icon found__withdrawal open__popup relative" data-popup="withdrawal">
+                                            <span class="icon-Withdrawal"></span>
+
+                                            <div class="tooltip">
+                                                <span>Withdrawal</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="found__top">
+                                    <div class="table__item">
+                                        <img class="crypto__logo ETH__logo" src="./images/cryptologoes/ethereum-logo.png" alt="ethereum logo">
+                                        <span>Ethereum</span>
+                                    </div>
+
+                                    <div class="table__item">
+                                        <span>ETH</span>
+                                    </div>
+
+                                    <div class="table__item">
+                                        <span>50</span>
+                                    </div>
+
+                                    <div class="table__item">
+                                        <span>50</span>
+                                    </div>
+
+                                    <div class="table__item">
+                                        <span>0</span>
+                                    </div>
+
+                                    <div class="table__item">
+                                        <span>0</span>
+                                    </div>
+
+                                    <div class="table__item">
+                                        <span>0.33</span>
+                                    </div>
+
+                                    <div class="table__item found__deposit__withdrawal">
+                                        <div class="found_icon found__deposit relative open__popup" data-popup="deposit">
+                                            <span class="icon-Deposit"></span>
+
+                                            <div class="tooltip">
+                                                <span>Deposit</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="found_icon found__withdrawal open__popup relative" data-popup="withdrawal">
+                                            <span class="icon-Withdrawal"></span>
+
+                                            <div class="tooltip">
+                                                <span>Withdrawal</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="found__top">
+                                    <div class="table__item">
+                                        <img class="crypto__logo" src="./images/cryptologoes/btc-logo.png" alt="BTC logo">
+                                        <span>Bitcoin</span>
+                                    </div>
+
+                                    <div class="table__item">
+                                        <span>BTC</span>
+                                    </div>
+
+                                    <div class="table__item">
+                                        <span>50</span>
+                                    </div>
+
+                                    <div class="table__item">
+                                        <span>50</span>
+                                    </div>
+
+                                    <div class="table__item">
+                                        <span>0</span>
+                                    </div>
+
+                                    <div class="table__item">
+                                        <span>0</span>
+                                    </div>
+
+                                    <div class="table__item">
+                                        <span>0.33</span>
+                                    </div>
+
+                                    <div class="table__item found__deposit__withdrawal">
+                                        <div class="found_icon found__deposit relative open__popup" data-popup="deposit">
+                                            <span class="icon-Deposit"></span>
+
+                                            <div class="tooltip">
+                                                <span>Deposit</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="found_icon found__withdrawal open__popup relative" data-popup="withdrawal">
+                                            <span class="icon-Withdrawal"></span>
+
+                                            <div class="tooltip">
+                                                <span>Withdrawal</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+
+                        <div class="tabparent__child" id="deposit">
+                            <p>test2</p>
+                        </div>
+
+                        <div class="tabparent__child" id="withdrawal">
+                            <p>test3</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- footer -->
+        <footer class="loopex__footer">
+            <div class="loopex__container">
+                <div class="loopex__footer-menu">
+                    <ul class="loopex__footer-menu-ul">
+                        <li class="footer__menu-li"><a href="aboutloopex.html">about</a></li>
+                        <li class="footer__menu-li"><a href="#">Important Information</a></li>
+                        <li class="footer__menu-li"><a href="#">contact</a></li>
+                        <li class="footer__menu-li"><a href="terms.html">Terms and Conditions</a></li>
+                        <li class="footer__menu-li"><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+
+                    <ul class="loopex__footer-menu-ul">
+                        <li class="footer__menu-li"><a href="#">Loopex ICO</a></li>
+                        <li class="footer__menu-li"><a href="#">fees</a></li>
+                        <li class="footer__menu-li"><a href="#">White Paper</a></li>
+                    </ul>
+
+                    <div class="subscribe loopex__footer-menu-ul">
+                        <div class="social__icons">
+                            <ul>
+                                <li><span class="icon-twitter1"></span>
+                                
+                                    <div class="tooltip">
+                                        <h5>Twitter</h5>
+                                    </div>
+                                </li>
+                                <li><span class="icon-facebook"></span>
+                                    <div class="tooltip">
+                                        <h5>Facebook</h5>
+                                    </div>
+                                </li>
+                                <li><span class="icon-telegram1"></span>
+                                    <div class="tooltip">
+                                        <h5>Telegram Channel</h5>
+                                    </div>
+                                </li>
+                                <li><span class="icon-telegram1"></span>
+                                    <div class="tooltip">
+                                        <h5>Telegram Group</h5>
+                                    </div>
+                                </li>
+                                <li><span class="icon-instagram1"></span>
+                                    <div class="tooltip">
+                                        <h5>Instagram</h5>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sub">
+                            <div class="sub__group">
+                                <input type="text" class="sub__input" placeholder="Email">
+                                <span>Subscribe</span>
+                            </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    <p>&copy 2018-2019 Loopex.io <span>All rights reserved</span></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <!-- login -->
+    <div class="loopex__popup-container loopex__popup-close login__popup" data-popup="login">
+        <div class="loopex__popup">
+            <div class="loopex__popup-close">
+                <span>&times;</span>
+            </div>
+            <h4 class="loopex__popup-title">Log In</h4>
+
+            <form action="javascript:;" class="loopex__popup-form">
+                <div class="loopex__form-group">
+                    <input type="text" class="loopex__input" placeholder="Email">
+                    <div class="input__error">Fill out the field</div>
+                </div>
+
+                <div class="loopex__form-group">
+                    <div class="myinput relative">
+                        <input type="password" class="loopex__input" placeholder="Password">
+                        <span class="icon-eye password__eye"></span>
+                    </div>
+                    <div class="input__error">Fill out the field</div>
+                </div>
+
+                <div class="form__btn">
+                    <button type="submit" class="btn btn--green">Log in</button>
+
+                    <div class="cssload-container">
+                        <div class="cssload-speeding-wheel"></div>
+                    </div>
+                </div>
+
+                <div class="forget__pass">
+                    <a class="atag" href="#" data-id="reset__popup">Forgot password?</a>
+                    <p>Don't have an account?<a class="atag" href="#" data-id="register__popup"> Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- register -->
+    <div class="loopex__popup-container loopex__popup-close register__popup" data-popup="register">
+        <div class="loopex__popup">
+            <div class="loopex__popup-close">
+                <span>&times;</span>
+            </div>
+            <h4 class="loopex__popup-title">Create Your Account</h4>
+
+            <form action="javascript:;" class="loopex__popup-form">
+                <div class="loopex__form-group">
+                    <input type="text" class="loopex__input" placeholder="Email">
+                    <div class="input__error">Fill out the field</div>
+                </div>
+
+                <div class="loopex__form-group">
+                    <input type="text" class="loopex__input" placeholder="Name">
+                    <div class="input__error">Fill out the field</div>
+                </div>
+
+                <div class="loopex__form-group">
+                    <input type="text" class="loopex__input" placeholder="Surname">
+                    <div class="input__error">Fill out the field</div>
+                </div>
+
+                <div class="loopex__form-group">
+                    <div class="myinput relative">
+                        <input type="password" class="loopex__input" placeholder="Password">
+                        <span class="icon-eye password__eye"></span>
+                    </div>
+                    <div class="input__error">Fill out the field</div>
+                </div>
+
+                <div class="loopex__form-group">
+                    <div class="myinput relative">
+                        <input type="password" class="loopex__input" placeholder="Repeat Password">
+                        <span class="icon-eye password__eye"></span>
+                    </div>
+                    <div class="input__error">Fill out the field</div>                 
+                </div>
+
+                <div class="loopex__form-group">
+                    <label for="referalcode" class="referal__code-label open__popup" data-popup="referal">Enter the referral code</label>
+                    <input type="text" id="referal" class="loopex__input loopex__popup-close referalcode" data-popup="referal" placeholder="Referral code">
+                    <div class="input__error">Fill out the field</div>
+                </div>
+
+                <div class="agree__terms">
+                    <label class="checkmark__container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <span>I accept<a href="#" class="hover-green" target="_blank">the Terms and Conditions</a></span>
+                        <span>and<a href="#" class="hover-green" target="_blank">the Privacy Policy</a></span>
+                    </label>
+                </div>
+
+                <div class="form__btn">
+                    <button type="submit" class="btn btn--green">register</button>
+
+                    <div class="cssload-container">
+                        <div class="cssload-speeding-wheel"></div>
+                    </div>
+                </div>
+
+                <div class="forget__pass">
+                    <p>Don't have an account?<a class="atag" href="#" data-id="login__popup">Log in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- reset password -->
+    <div class="loopex__popup-container loopex__popup-close reset__popup">
+        <div class="loopex__popup">
+            <div class="loopex__popup-close">
+                <span>&times;</span>
+            </div>
+            <h4 class="loopex__popup-title">Password Reset</h4>
+
+            <form action="javascript:;" class="loopex__popup-form">
+                <div class="loopex__form-group">
+                    <input type="text" class="loopex__input" placeholder="Enter your Loopex Account email">
+                    <div class="input__error">Enter the email address in the correct form</div>
+                </div>
+                
+                <div class="form__btn">
+                    <button type="submit" class="btn btn--green">Log in</button>
+
+                    <div class="cssload-container">
+                        <div class="cssload-speeding-wheel"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- password change -->
+    <div class="loopex__popup-container loopex__popup-close change__popup" data-popup="changePass">
+        <div class="loopex__popup">
+            <div class="loopex__popup-close">
+                <span>&times;</span>
+            </div>
+            <h4 class="loopex__popup-title">Change Password</h4>
+
+            <form action="javascript:;" class="loopex__popup-form">
+                <div class="loopex__form-group">
+                    <div class="myinput relative">
+                        <input type="password" class="loopex__input" placeholder="Old password">
+                        <span class="icon-eye password__eye"></span>
+                    </div>
+                    <div class="input__error">Fill out the field</div>
+                </div>
+
+                <div class="loopex__form-group">
+                    <div class="myinput relative">
+                        <input type="password" class="loopex__input" placeholder="New password">
+                        <span class="icon-eye password__eye"></span>
+                    </div>
+                    <div class="input__error">Fill out the field</div>
+                </div>
+
+                <div class="loopex__form-group">
+                    <div class="myinput relative">
+                        <input type="password" class="loopex__input" placeholder="Repeat new password">
+                        <span class="icon-eye password__eye"></span>
+                    </div>
+                    <div class="input__error">Fill out the field</div>
+                </div>
+                
+                <div class="form__btn">
+                    <button type="submit" class="btn btn--green">change</button>
+
+                    <div class="cssload-container">
+                        <div class="cssload-speeding-wheel"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- add ip address to the blacklist -->
+    <div class="loopex__popup-container loopex__popup-close blacklist add__blacklist" data-popup="add__to__the__blacklist">
+        <div class="loopex__popup">
+            <div class="loopex__popup-close">
+                <span>&times;</span>
+            </div>
+
+            <h2 class="blacklist__title">Do you really want to add the IP address to the blacklist?</h2>
+
+            <div class="blacklist__btns">
+                <button class="btn blacklist__yes">Yes</button>
+                <button class="btn blacklist__no">No</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- remove device to the blacklist -->
+    <div class="loopex__popup-container loopex__popup-close blacklist 2fa__popup" data-popup="remove__to__the__blacklist">
+        <div class="loopex__popup">
+            <div class="loopex__popup-close">
+                <span>&times;</span>
+            </div>
+
+            <h2 class="blacklist__title">Do you really want to remove the device from the whitelist?</h2>
+
+            <div class="blacklist__btns">
+                <button class="btn blacklist__yes">Yes</button>
+                <button class="btn blacklist__no">No</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- deposit popup -->
+    <div class="loopex__popup-container loopex__popup-close deposit__popup" data-popup="deposit">
+        <div class="loopex__popup">
+            <div class="loopex__popup-close">
+                <span>&times;</span>
+            </div>
+            <h4 class="loopex__popup-title">Deposit</h4>
+            <h4 class="loopex__popup-title deposit__title">Loopex Token (XLP)</h4>
+
+            <p class="deposit__p">Address</p>
+
+            <div class="popup__middle">
+                <img src="https://a.radikal.ru/a07/1903/fc/2b090fd0a925.png" alt="">
+            </div>
+
+            <div class="fa__popup__bottom">
+                <div class="loopex__form-group">
+                    <input type="text" value="0x8853ef8cf0Ac498b3aB0ddBb0AD7279893731Af0" class="loopex__input" disabled>
+
+                    <span class="icon-copy-icon copy__icon"></span>
+                    <div class="copy__content">
+                        <p>Copied</p>
+                    </div>
+                </div>
+
+                <p class="deposit__bottom-p">Send only <span id="coinSymbol">XLP</span> to this address. Sending any other coin or token to this address will cause the loss of your funds.</p>
+                <p class="deposit__bottom-p">Funds will be deposited after <span id="confsCount">30</span> network confirmations</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- withdrawal popup -->
+    <div class="loopex__popup-container loopex__popup-close withdrawal__popup" data-popup="withdrawal">
+        <div class="loopex__popup">
+            <div class="loopex__popup-close">
+                <span>&times;</span>
+            </div>
+            <h4 class="loopex__popup-title">Withdraw</h4>
+            <h4 class="loopex__popup-title deposit__title">Loopex Token(XLP)</h4>
+
+            <p class="deposit__bottom-p">Do not withdraw funds directly to an IEO addresses, as you will not receive tokens</p>
+            <p class="deposit__bottom-p">Minimum withdrawal: <span id="minimumWithdrawal">700 XLP</span></p>
+
+            <div class="fa__popup__bottom">
+                <div class="loopex__form-group">
+                    <input type="text" class="loopex__input" placeholder="XLP  Address">        
+                </div>
+
+                <div class="loopex__form-group">
+                    <label for="address" class="withdrawal__label">Available: <span class="WithdrawBalance">50</span></label>
+                    <input type="text" class="loopex__input" placeholder="Amount">         
+                </div>
+            </div>
+
+            <div class="form__btn">
+                <label class="withdrawal__label">You will receive: <span class="WithdrawAmounth">0</span></label>
+                <label class="withdrawal__label withdrawal__label-right">Fee: <span class="WithdrawFee">500</span></label>
+                <button type="submit" class="btn withdrawal__disable__green relative" disabled>Withdrawal
+
+                    <div class="cssload-container">
+                        <div class="cssload-speeding-wheel"></div>
+                    </div>
+                </button>              
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

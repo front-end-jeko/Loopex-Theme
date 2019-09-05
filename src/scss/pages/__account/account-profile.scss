@@ -1,0 +1,189 @@
+.user__account {
+    .tablink__parent {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    .tabparent__child {
+        margin: 0 10px;
+    }
+
+
+    .row--sm {
+        height: 200px;
+    }
+
+    .row--esm {
+        height: 170px;
+    }
+    
+    .row__fluid {
+        height: 275px;
+    }
+
+    .row__md {
+        height: 234px;
+    }
+
+    .tabparent__row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 35px;
+
+
+
+
+        .tabparent__item {
+            border: 2px solid #26343C;
+            position: relative;
+            border-radius: 10px;
+            height: 100%;
+            padding: 30px 34px;
+            flex-grow: 1;
+
+            &:nth-child(1){
+                margin-right: 10px;
+            }
+
+            &:nth-child(2){
+                margin-left: 10px;
+            }
+
+            .tabcontent__title {
+                position: absolute;
+                left: 25px;
+                top: -13px;
+                padding: 0 16px;
+                color: #5E6C75;
+                background-color: #122028;
+            }
+        }
+
+
+        
+        .loopex__tabparent {
+            .tabcontent__info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 40px;
+                margin-bottom: 9px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .twoline {
+                    display: flex;
+                    flex-direction: column;
+
+                    h3 {
+                        color: $loopex-green;
+                        line-height: 1.2;
+                    }
+                }
+
+                .info__title {
+                    color: $loopex-green;
+                }
+
+                .info__result {
+                    color: $loopex-gray;
+                }
+            }
+
+            .change--password {
+                color: $loopex-gray;
+                text-transform: capitalize;
+                font-size: 16px;
+
+                &:hover {
+                    background: $loopex-green;
+                }
+            }
+        }
+
+
+
+        .fluid__tabcontent {
+            display: flex;
+
+            .left__tabcontent {
+                width: 50%;
+
+                .tabcontent__info {
+                    margin-bottom: 17px;
+
+                    .loopex__form-group {
+                        height: 27px;
+                        width: 330px;
+                        display: flex;
+                        align-items: center;
+
+                        input:focus {
+                            background: #17262f;
+                        }
+
+                        input::selection {
+                            background: transparent;
+                            outline: none;
+                        }
+                    }
+                }
+            }
+
+            .right__tabcontent {
+                width: 50%;
+                padding-left: 60px;
+
+                h3 {
+                    text-align: center;
+                    margin-top: 10px;     
+                    margin-bottom: 21px;
+                }
+
+                .referal__list {
+                    height: 150px;
+                    border: 1px solid #26343C;
+
+                    &-top {
+                        display: flex;
+                        padding: 6px 0px;
+                        position: sticky;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        border-bottom: 1px solid #26343C;
+
+                        h2 {
+                            width: 50%;
+                            flex-grow: 1;
+                            text-align: center;
+                        }
+                    }
+
+                    &-bottom {
+                        height: 112px;
+                        margin-top: 3px;
+                        overflow-y: auto;
+
+                        
+                        .referal__lists {
+                            display: flex;
+                            align-items: center;
+
+                            h2 {
+                                width: 50%;
+                                flex-grow: 1;
+                                text-align: center;
+                                line-height: 1.4;
+                                color: #cacaca;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }         
+            }
+        }
+    }
+}

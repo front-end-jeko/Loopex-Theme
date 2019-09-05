@@ -184,7 +184,34 @@ eyeIcon.forEach(function(eye){
 
 
 
-// time
+
+// dropdown menus show and hide
+var dropdowns = document.querySelectorAll('.dropdown');
+
+dropdowns.forEach(function(drop){
+
+    drop.addEventListener('click', function(e){
+        drop.classList.toggle('active');
+      
+        if(drop.classList.contains('active') == true) {
+            
+            for(var i = 0; i < dropdowns.length; i++){
+                dropdowns[i].classList.remove('active');
+            }
+            
+            drop.classList.toggle('active'); 
+        }
+        e.stopPropagation();
+    });
+});
+
+
+
+
+
+
+
+// timer
 // Set the date we're counting down to
 var countDownDate = new Date("oct 5, 2019 15:37:25").getTime();
 
@@ -220,46 +247,10 @@ var x = setInterval(function() {
 
 
 
-// dropdown menus show and hide
-var dropdowns = document.querySelectorAll('.dropdown');
-
-dropdowns.forEach(function(drop){
-
-    drop.addEventListener('click', function(e){
-        drop.classList.toggle('active');
-      
-        if(drop.classList.contains('active') == true) {
-            
-            for(var i = 0; i < dropdowns.length; i++){
-                dropdowns[i].classList.remove('active');
-            }
-            
-            drop.classList.toggle('active'); 
-        }
-        e.stopPropagation();
-    });
-});
 
 
 
 
-// document.querySelector('.copy__icon').addEventListener('click', copyInput);
-
-// function copyInput(){
-//     var copyText = document.getElementById("copyInput");
-//     var copyContent = document.querySelector('.copy__content');
-
-//     copyText.select();
-
-//     document.execCommand("copy");
-
-//     copyContent.classList.add('active');
-
-
-//     setInterval(function(){
-//         copyContent.classList.remove('active');
-//     }, 2000);
-// };
 
 
 

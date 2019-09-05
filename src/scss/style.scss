@@ -6,14 +6,22 @@
 @import 'modules/mixins.scss';
 
 
-// fonts
-// @import 'partials/fonts.scss';
-
-
 // components
 @import 'components/components--import.scss';
 
 
 @import 'pages/__main-page/main-page-import.scss';
+
+
+@import 'pages/__privacy-and-terms/privacy.scss';
+
+
+@import 'pages/__about-loopex/about-loopex.scss';
+
+
+@import 'pages/__account/account--import.scss';
+
+
+@import 'pages/__founds/founds--import.scss';
 
 

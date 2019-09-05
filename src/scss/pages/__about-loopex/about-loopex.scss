@@ -1,0 +1,320 @@
+.wrapper__fluid {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.container  {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .wrapper  {
+        flex-grow: 1;
+    }
+}
+
+#fees {
+    .about__right-title {
+        margin-bottom: 50px;
+    }
+}
+
+
+
+.about__loopex-parent {
+    display: flex;
+
+    .about__loopex-right {
+        padding-top: 80px;
+        width: 18%;
+        position: relative;
+
+        li {
+            margin-bottom: 3px;
+            cursor: pointer;
+
+            &.active {
+                a {
+                    color: $loopex-green;                  
+                    border-bottom: 1px solid $input-border;
+                }
+            }
+
+            a {
+                color: #fff;
+                font-size: 15px;
+                text-align: right;
+                padding: 5px 0;
+                padding-right: 30px;
+                line-height: 1.7;
+                white-space: nowrap;
+                display: block;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 1px;
+                background: $input-border;
+                display: none;
+            }
+
+            &.active::after {
+                display: block;
+            }
+
+            &.active:nth-child(1){
+                &::after {             
+                    height: 115px;
+                }
+            }
+
+            &.active:nth-child(2){
+                &::after {
+                    height: 153px;
+                }
+            }
+
+            &.active:nth-child(3){
+                &::after {
+                    height: 191px;
+                }
+            }
+
+            &.active:nth-child(4){
+                &::after {
+                    height: 229px;
+                }
+            }
+
+            &.active:nth-child(5){
+                &::after {
+                    height: 267px;
+                }
+            }
+        }
+    }
+
+    .about__loopex-left {
+        width: 82%;
+        border-top: 1px solid $input-border;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 70px;
+
+        p {
+            color: #97a5a3;
+            font-size: 16px;
+        }
+
+        .about__right-title {
+            color: $loopex-green;
+            font-size: 32px;
+            text-align: center;
+            margin-top: 35px;
+            margin-bottom: 10px;
+        }
+
+        .loopex__About__child {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+
+            .loopex__about__item {
+                width: 50%;
+                padding: 0 40px;
+                padding-bottom: 40px;
+                @include flex($direction: column, $align: center, $justify: center);
+
+                img {
+                    width: 100px;
+                }
+
+                .member__img {
+                    width: 150px;
+                    height: 150px;
+                    position: relative;
+                    border-radius: 50%;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .lindin__icon {
+                        position: absolute;
+                        right: -2px;
+                        top: 105px;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background: #122028;
+                        @include flex($justify: center, $align: center);
+
+                        .icon-linkedin {
+                            font-size: 23px;
+                            color: $loopex-green;
+                        }
+                    }
+                }
+
+                .advantige--title {
+                    color: $loopex-green;
+                    margin: 10px 0;
+                }
+
+                p {
+                    text-align: justify;
+                }
+
+                .author__name {
+                    color: $loopex-green;
+                    font-size: 22px;
+                    margin-top: 20px;
+                }
+
+                .member__position {
+                    color: $loopex-green;
+                    font-size: 18px;
+                    margin: 10px 0;
+                }
+            }
+        }
+
+        .about__orders {
+            margin-top: 30px;
+
+            .aboutorder__title {
+                color: $loopex-green;
+                margin: 7px 0;
+            }
+
+            p {
+                text-align: justify;
+            }
+        }
+
+        .token {
+            display: flex;
+
+            .coin__logo {
+                width: 260px;
+                height: 260px;
+            }
+
+            p {
+                padding-left: 30px; 
+                text-align: justify;
+            }
+        }
+
+
+        .fees__table {
+            width: 800px;
+            margin: 0 auto;
+            margin-bottom: 100px;
+            border: 1px solid $input-border;
+
+            .fees__row {
+                display: flex;
+                border-bottom: 1px solid $input-border;
+
+                .fees__title {
+                    height: 59px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    h2, h3 {
+                        text-align: center;
+                        color: $loopex-green;
+                    }
+
+                    &:nth-child(1){
+                        width: 200px;
+                        border-right: 1px solid $input-border;
+                    }
+
+                    &:nth-child(2){
+                        width: 300px;
+                        border-right: 1px solid $input-border;
+
+                        h2 {
+                            width: 50%;
+                        }
+                    }
+
+                    &:nth-child(3){
+                        width: 300px;
+                        flex-direction: column;
+
+                        .fees__bottom {
+                            width: 100%;
+                            display: flex;
+                            margin-top: 5px;
+                        }
+
+                        h2 {
+                            width: 50%;
+                        }
+
+                        h3 {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &:nth-child(2),
+                &:nth-child(3){                  
+                    h2 {
+                        color: #97a5a3;
+                    }
+
+                    .fees__title {
+                        flex-direction: row;
+                        height: 41px;
+                    }
+                }
+
+                &:nth-child(3) {
+                    border-bottom: 0;
+
+                    .fee__bg {
+                        width: 600px;
+                        border-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .sliderpage__ul {
+        .about__li {
+            &:nth-child(1)::after{
+                height: 118px !important;
+            }
+
+            &:nth-child(2)::after{
+                height: 159px !important;
+            }
+        }
+    }
+
+    .slider__a {
+        font-size: 17px !important;
+    }
+
+    .slider__p {
+        padding-top: 20px;
+        padding-right: 50px;
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+            color: #cacaca;
+        }
+    }
+}
+
+
