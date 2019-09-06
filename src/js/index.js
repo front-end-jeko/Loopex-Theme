@@ -4,7 +4,7 @@ import $ from 'jquery';
 
 
 // open all popup by one code
-var openPopup = document.querySelectorAll('.open__popup');
+let openPopup = document.querySelectorAll('.open__popup');
 openPopup.forEach(click => {
     click.addEventListener('click', e => {
         document.querySelectorAll('.loopex__popup-close').forEach(mypopup => {
@@ -21,7 +21,7 @@ openPopup.forEach(click => {
 
 
 // close popup by esc 
-var popups = document.querySelectorAll('.loopex__popup-close');
+let popups = document.querySelectorAll('.loopex__popup-close');
 popups.forEach(popup => {
     document.addEventListener('keydown', e => {
         if (e.keyCode == 27 || e.which == 27) {
@@ -52,7 +52,7 @@ document.querySelectorAll('.loopex__popup').forEach(popup => {
 
 
 // close popups by x icon
-var closePopup = document.querySelectorAll('.loopex__popup-close');
+let closePopup = document.querySelectorAll('.loopex__popup-close');
 closePopup.forEach(close => {
     close.addEventListener('click', function() {
         this.parentElement.parentElement.classList.remove('active');
@@ -71,11 +71,14 @@ document.addEventListener('click', e => {
 
 
 
+
+
+
 // close dropdown contents by click document
 document.addEventListener('click', e =>{
     document.querySelectorAll('.dropdown__close').forEach(dropdown => {
 
-        var previous = dropdown.previousElementSibling.parentElement;
+        let previous = dropdown.previousElementSibling.parentElement;
 
         if(previous.classList.contains('active') === true){
             previous.classList.remove('active');         
@@ -88,14 +91,14 @@ document.addEventListener('click', e =>{
 
 
 // popups
-var atags = document.querySelectorAll('.atag');
+let atags = document.querySelectorAll('.atag');
 atags.forEach(a => {
     var dataId = a.getAttribute('data-id');
 
     a.addEventListener('click', () => {
         document.querySelectorAll('.loopex__popup-container').forEach(pop => {
             if(pop.classList.contains(dataId) === true){
-                var newPopup = pop.classList.add('active');
+                pop.classList.add('active');
             } else if (pop.classList.contains('active') === true){
                 pop.classList.remove('active');           
             }
@@ -103,9 +106,6 @@ atags.forEach(a => {
     });
 });
     
-
-
-
 
 // tabs
 $(function () {
@@ -130,8 +130,6 @@ $(function () {
         return false;
     });
 });
-
-
 
 
 $(function () {
@@ -159,8 +157,9 @@ $(function () {
 
 
 
+
 // password eye visibility
-var eyeIcon = document.querySelectorAll('.password__eye');
+let eyeIcon = document.querySelectorAll('.password__eye');
 eyeIcon.forEach(eye => {
     eye.addEventListener('click', showpass);
 
@@ -183,7 +182,7 @@ eyeIcon.forEach(eye => {
 
 
 // dropdown menus show and hide
-var dropdowns = document.querySelectorAll('.dropdown');
+let dropdowns = document.querySelectorAll('.dropdown');
 dropdowns.forEach(drop =>{
 
     drop.addEventListener('click', e => {
@@ -207,50 +206,48 @@ dropdowns.forEach(drop =>{
 
 
 
-// timer
+
+
+// countdown
+
 // Set the date we're counting down to
-var countDownDate = new Date("oct 5, 2021 15:37:25").getTime();
+let countDownDate = new Date("oct 5, 2020 15:37:25").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(() => {
+  // Update the count down every 1 second
+  let x = setInterval(() => {
 
-  // Get todays date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  var mydays = document.querySelector(".timer__number.days").innerHTML = days;
-  var myhours = document.querySelector(".timer__number.hours").innerHTML = hours;
-  var myminutes = document.querySelector(".timer__number.minutes").innerHTML = minutes;
-  var myseconds = document.querySelector(".timer__number.seconds").innerHTML = seconds;
-
-
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.querySelector(".available__time").innerHTML = "EXPIRED";
-  }
-}, 1000);
+    // Get todays date and time
+    let now = new Date().getTime();
+      
+    // Find the distance between now and the count down date
+    let distance = countDownDate - now;
+      
+    // Time calculations for days, hours, minutes and seconds
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+    // Output the result in an element with id="demo"
+    let mydays = document.querySelector(".timer__number.days").innerHTML = days;
+    let myhours = document.querySelector(".timer__number.hours").innerHTML = hours;
+    let myminutes = document.querySelector(".timer__number.minutes").innerHTML = minutes;
+    let myseconds = document.querySelector(".timer__number.seconds").innerHTML = seconds;
 
 
+    // If the count down is over, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.querySelector(".available__time").innerHTML = "EXPIRED";
+    }
+  }, 1000);
 
 
 
 
 
 
-
-
-
-// slider
+//   slider
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -278,14 +275,12 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-$('#nextsliderbtn').click(() => plusSlides(1))
-$('#prevsliderbtn').click(() => plusSlides(-1))
+$('#nextsliderbtn').click(() => plusSlides(1));
+$('#prevsliderbtn').click(() => plusSlides(-1));
 
-let dots = $('.sliderDots');
+var dots = $('.sliderDots');
 
-$(dots[0]).click(() => currentSlide(1))
-$(dots[1]).click(() => currentSlide(2))
-$(dots[2]).click(() => currentSlide(3))
-$(dots[3]).click(() => currentSlide(4))
-
-
+$(dots[0]).click(() => currentSlide(1));
+$(dots[1]).click(() => currentSlide(2));
+$(dots[2]).click(() => currentSlide(3));
+$(dots[3]).click(() => currentSlide(4));
