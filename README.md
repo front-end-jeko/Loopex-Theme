@@ -6,4 +6,4 @@ In the project directory, you have to run:
 ### 2) `npm start`
 
 
-### for build `npm run build`
+### build) `npm run build`
